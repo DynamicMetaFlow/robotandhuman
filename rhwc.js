@@ -39,7 +39,8 @@ function display_comics(comics)  {
         c += '<div class="dialogue d-left">'+comics[i].panels[j].left.text+'</div>';
       }
       if (comics[i].panels[j].left.char)  {
-        c += '<img class="left" src="graphics/'+comics[i].panels[j].left.char+'.png">';
+        c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png">';
+        //c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png" onLoad="$(this).qtip({\'content\': {\'text\': \'moo\'}, \'show\': {\'ready\': \'true\'}})">';
       }
 
       // right character & dialogue
@@ -47,7 +48,7 @@ function display_comics(comics)  {
         c += '<div class="dialogue d-right">'+comics[i].panels[j].right.text+'</div>';
       }
       if (comics[i].panels[j].right.char)  {
-        c += '<img class="right" src="graphics/'+comics[i].panels[j].right.char+'.png">';
+        c += '<img class="i-right" src="graphics/'+comics[i].panels[j].right.char+'.png">';
       }
 
       c += '</div>\n';

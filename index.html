@@ -2,19 +2,36 @@
 <html>
 <head>
 <title>Robot &amp; Human: A Webcomic</title>
-<link rel="stylesheet" type="text/css" href="rhwc.css">
-<script type="text/javascript" src="jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script><!-- seems I have to use an old version because of qTip compatibility issues... -->
+<script type="text/javascript" src="jquery.qtip.js"></script>
 <script type="text/javascript" src="rhwc.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.qtip.min.css">
+<link rel="stylesheet" type="text/css" href="rhwc.css">
+
+<script type="text/javascript">
+$(document).ready(function()  {
+  $('#targetlink').qtip({
+    content: {
+      attr: 'title'
+    }
+  })
+});
+</script>
+
 </head>
+
 <body>
 <h1 id="ctitle">Robot &amp; Human</h1>
 
+<noscript>It looks like you have JavaScript turned off.  Sorry, but this whole page is an exercise in JS.  You won't 
+see much here without it.</noscript>
 
 <div id="place"></div>
 
 <h2 id="about">About this comic</h2>
 
-<p>lorem ipsum...</p>
+<p>This page makes heavy use of <a href="http://jquery.com/">jQuery</a> and <a id="targetlink" title="moo"
+href="http://craigsworks.com/projects/qtip2/">qTip2</a>.  My gratitude to their authors.</p>
 
 </body>
 </html>
