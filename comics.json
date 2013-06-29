@@ -1,0 +1,84 @@
+[ {
+  "title": "It happens when they change something",
+  "date": "2002",
+    "panels": [
+      {
+        "left": {
+          "char": "robot-fr",
+          "text": "H, do you ever wonder if maybe we're just brains in jars, and our world could be blinked out of existence by a hardware failure?"
+        },
+        "right": {
+          "char": "human-fl",
+          "text": ""
+        }
+      },
+      {
+        "extra_classes": "dashed",
+        "left": {
+          "char": "robot-fr",
+          "text": ""
+        },
+        "right": {
+          "char": "human-fl",
+          "text": "D--'t b- si--y."
+        }
+      },
+      {
+        "left": {
+          "char": "robot-fr",
+          "text": "What?"
+        },
+        "right": {
+          "char": "human-fl",
+          "text": "I said don't be silly."
+        }
+      }
+    ]
+},
+{
+  "title": "",
+  "date": "2002",
+    "news": "I hope you like this one because they're probably not getting any funnier.",
+    "panels": [
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Hey R, what operating system do you run?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "RobOS v11.20.3.1377864 64 kb free"
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Oh, RobOS, I get it. 'Cause it sounds like \"robot\"."
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "No, that's not it."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Because it was programmed by someone named Robert?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "Not quite."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "What, then?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "It's short for \"Robintosh\"."
+        }
+      }
+    ]
+} ]
