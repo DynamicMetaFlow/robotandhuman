@@ -11,12 +11,110 @@ H1 {
   text-align: center;
 }
 
+
+/* "episode" is the single wrapper for each comic and its attendant elements */
+.episode {
+  clear: both;
+  /* width: 80%; */
+  margin-left: 10%;
+  margin-top: 3.5em;
+}
+
+
+/* The title and date field that precede the comic panels */
+.title, .date {
+  font-weight: bold;
+}
+
+.title {
+  float: left;
+}
+
+.date {
+  float: right;
+  margin-right: 12px;  /* so the right side of this div lines up with the right edge of the last panel */
+}
+
+
+/* individual panels */
 .panel {
+  display: inline-block;
+  margin: 5px 10px 0 0;
   border: 1px solid #222;
-  width: 200px;
-  min-height: 250px;
+  width: 250px;
+  min-height: 300px;
+  position: relative;  /* so panels will be "positioned ancestors" of the images inside them */
 }
 
 .dashed {
   border-style: dashed;
 }
+
+
+/* character images */
+.panel IMG {
+  position: absolute;
+  bottom: 10px;
+}
+
+.panel IMG.left {
+  left: 10px;
+}
+
+.panel IMG.right {
+  right: 10px;
+}
+
+
+/* dialogue */
+.dialogue {
+  display: inline;
+  width: 40%;
+  margin: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #999;
+}
+
+.d-left {
+  float: left;
+}
+
+.d-right {
+  float: right;
+}
+
+
+/* JSON */
+.show_json {
+  text-align: right;
+  font-size: smaller;
+  margin-right: 12px;  /* so the right side of this div lines up with the right edge of the last panel */
+}
+
+.show_json A {
+  text-decoration: none;
+}
+
+.json {
+  font-family: monospace;
+  white-space: pre-wrap;  /* so it looks like code */
+  border: 1px solid #999;
+  padding: 0.5em;
+  display: none;  /* hide it by default; the toggle link will show it */
+  margin-right: 12px;  /* so the right side of this div lines up with the right edge of the last panel */
+}
+
+
+/* "News post" */
+.news {
+  font-style: italic;
+  color: #666;
+}
+
+
+/* placeholder -- just an empty div that marks the place where the comics end */
+#place {
+  clear: both;
+  display: none;
+}
+

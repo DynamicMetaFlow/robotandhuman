@@ -1,6 +1,7 @@
-[ {
-  "title": "It happens when they change something",
-  "date": "2002",
+[
+  {
+    "title": "It happens when they change something",
+    "date": "2002",
     "panels": [
       {
         "left": {
@@ -34,10 +35,10 @@
         }
       }
     ]
-},
-{
-  "title": "",
-  "date": "2002",
+  },
+  {
+    "title": "OS Wars",
+    "date": "2002",
     "news": "I hope you like this one because they're probably not getting any funnier.",
     "panels": [
       {
@@ -53,7 +54,7 @@
       {
         "left": {
           "char": "human-fr",
-          "text": "Oh, RobOS, I get it. 'Cause it sounds like \"robot\"."
+          "text": "Oh, \"RobOS\", I get it. 'Cause it sounds like \"robot\"."
         },
         "right": {
           "char": "robot-fl",
@@ -81,4 +82,5 @@
         }
       }
     ]
-} ]
+  }
+]
