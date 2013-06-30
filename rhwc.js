@@ -22,7 +22,7 @@ function display_comics(comics)  {
       c = '';  // string containing all of the code for this comic
 
   for (i = 0; i < comics.length; i++)  {
-    // We set the width of each episode div individually, according to how many panels it has.  If these numbers 
+    // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
     c = '<div class="episode" style="width: '+(266*comics[i].panels.length)+'px">';
 
@@ -35,12 +35,12 @@ function display_comics(comics)  {
       c += '<div class="panel '+(comics[i].panels[j].extra_classes ? comics[i].panels[j].extra_classes : '')+'">';
 
       // left character & dialogue
-      if (comics[i].panels[j].left.text)  {
-        c += '<div class="dialogue d-left">'+comics[i].panels[j].left.text+'</div>';
-      }
+      //if (comics[i].panels[j].left.text)  {
+      //  c += '<div class="dialogue d-left">'+comics[i].panels[j].left.text+'</div>';
+      //}
       if (comics[i].panels[j].left.char)  {
-        c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png">';
-        //c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png" onLoad="$(this).qtip({\'content\': {\'text\': \'moo\'}, \'show\': {\'ready\': \'true\'}})">';
+        //c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png">';
+        c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png" onLoad="speech_bubble(this, \'moo\')">';
       }
 
       // right character & dialogue
@@ -67,4 +67,26 @@ function display_comics(comics)  {
     $('<p>'+c+'</p>').insertBefore('#place');
   }
 
+}
+
+
+function speech_bubble(el, words)  {
+  $(el).qtip({
+    'content': {
+      'text': words
+    },
+    'position': {
+      'my': 'bottom left',
+      'at': 'top left'
+    },
+    'show': {
+      'ready': true
+    },
+    'hide': {
+      'event': false
+    },
+    'style': {
+      'classes': 'qtip-light'
+    }
+  });
 }
