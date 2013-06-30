@@ -37,8 +37,8 @@ function display_comics(comics)  {
     for (j = 0; j < comics[i].panels.length; j++)  {
       // The panel tag and its classes.
       // In the JSON file, set an "extra_classes" property on the whole comic to add that string to each panel's "class"
-      // attribute, or set it on an individual panel to add it to that panel only.  You'll need to add whatever extra 
-      // classes you want to use to your CSS file.
+      // attribute, or set it on an individual panel to add it to that panel only.  Of course, whatever extra classes you 
+      // add here must be defined in your CSS file.
       c += '<div class="panel'+
            (comics[i].extra_classes ? ' '+comics[i].extra_classes : '')+
            (comics[i].panels[j].extra_classes ? ' '+comics[i].panels[j].extra_classes : '')+
@@ -69,7 +69,7 @@ function display_comics(comics)  {
 
     // "show JSON" feature
     c += '<div class="show_json"><a href="javascript:void(0)" onClick="$(this.parentNode).next().toggle()">&#x2b10; show/hide JSON</a></div>';
-    c += '<div class="json">'+JSON.stringify(comics[i], null, "  ")+'</div>';
+    c += '<div class="json">'+JSON.stringify(comics[i], null, "  ").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')+'</div>';
 
     // news
     if (comics[i].news)  {

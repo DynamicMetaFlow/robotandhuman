@@ -123,7 +123,7 @@
   {
     "title": "I thought he was the son of Abraham",
     "date": "15 June 2001",
-    "news": "This is <a href=\"http://www.stripcreator.com/comics/evil_d/21898\">not the first time I've written this strip</a>, and it may not be the last.  And yes, the <a href=\"http://en.wikipedia.org/wiki/Newtons_(cookie)\">Fig Newtons</a> reference was dated even then.",
+    "news": "This is <a href=\"http://www.stripcreator.com/comics/evil_d/21898\">not the first time I've written this strip</a>, and it might not be the last.  And yes, the <a href=\"http://en.wikipedia.org/wiki/Newtons_(cookie)\">Fig Newtons</a> reference was dated even then.",
     "panels": [
       {
         "left": {
