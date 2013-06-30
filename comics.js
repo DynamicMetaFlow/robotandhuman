@@ -28,7 +28,7 @@ function display_comics(comics)  {
   for (i = 0; i < comics.length; i++)  {
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
-    c = '<div class="episode" style="width: '+(266*comics[i].panels.length)+'px">';
+    c = '<div class="episode" style="width: '+(267*comics[i].panels.length)+'px">';
 
     // title & date
     c += '<div class="title">'+comics[i].title+'</div><div class="date">'+comics[i].date+'</div><br>';
@@ -47,24 +47,20 @@ function display_comics(comics)  {
       // left character & dialogue
       c += '<div class="p-left">';
       if (comics[i].panels[j].left.text)  {
-        c += '<div class="dialogue d-left">'+comics[i].panels[j].left.text+'</div>';
+        c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
       }
       if (comics[i].panels[j].left.char)  {
-        c += '<br><img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png">';
-        //c += '<img class="i-left" src="graphics/'+comics[i].panels[j].left.char+'.png" onLoad="speech_bubble(this, \'left\', \''+
-        //      comics[i].panels[j].left.text.replace('\\', '\\\\').replace("'", "\\'").replace('"', '\\"')+'\')">';
+        c += '<br><img src="graphics/'+comics[i].panels[j].left.char+'.png">';
       }
       c += '</div>';  // class="p-left"
 
       // right character & dialogue
       c += '<div class="p-right">';
       if (comics[i].panels[j].right.text)  {
-        c += '<div class="dialogue d-right">'+comics[i].panels[j].right.text+'</div>';
+        c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
       }
       if (comics[i].panels[j].right.char)  {
-        c += '<img class="i-right" src="graphics/'+comics[i].panels[j].right.char+'.png">';
-        //c += '<img class="i-right" src="graphics/'+comics[i].panels[j].right.char+'.png" onLoad="speech_bubble(this, \'right\', \''+
-        //      comics[i].panels[j].right.text.replace('\\', '\\\\').replace("'", "\\'").replace('"', '\\"')+'\')">';
+        c += '<br><img src="graphics/'+comics[i].panels[j].right.char+'.png">';
       }
       c += '</div>';  // class="p-right"
 
@@ -85,28 +81,3 @@ function display_comics(comics)  {
   }
 
 }
-
-
-//function speech_bubble(el, side, words)  {
-//  $(el).qtip({
-//    'content': {
-//      'text': words
-//    },
-//    'position': {
-//      'my': 'bottom '+side,
-//      'at': 'top '+side
-//    },
-//    'show': {
-//      'ready': true
-//    },
-//    'hide': {
-//      'event': false
-//    },
-//    'style': {
-//      'classes': 'qtip-light qtip-rounded',
-//      'tip': {
-//        'corner': 'bottom center'
-//      }
-//    }
-//  });
-//}

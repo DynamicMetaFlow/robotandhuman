@@ -15,7 +15,6 @@ H1 {
 /* "episode" is the single wrapper for each comic and its attendant elements */
 .episode {
   clear: both;
-  /* width: 80%; */
   margin-left: 5%;
   margin-top: 3.5em;
 }
@@ -32,7 +31,7 @@ H1 {
 
 .date {
   float: right;
-  margin-right: 12px;  /* so the right side of this div lines up with the right edge of the last panel */
+  margin-right: 14px;  /* so the right side of this div lines up with the right edge of the last panel */
 }
 
 
@@ -51,24 +50,16 @@ H1 {
   border: 0;
   padding: 0;
   width: 50%;
-  /* height: 100%; */
-  /* min-height: 300px; */
 
   position: absolute;
   bottom: 0;
 }
 
 .p-left {
-  /* float: left; */
-  /* display: inline-block; */
-  /* background: green; */
   left: 0;
 }
 
 .p-right {
-  /* float: right; */
-  /* display: inline-block; */
-  /* background: pink; */
   right: 0;
   text-align: right;
 }
@@ -87,45 +78,24 @@ H1 {
 
 /* character images */
 .panel IMG {
-/*   position: absolute;
-  bottom: 10px; */
-  /* padding-top: 10px; */
   margin: 10px;
 }
-
-/* .panel IMG.i-left {
-  left: 10px;
-}
-
-.panel IMG.i-right {
-  right: 10px;
-} */
-
 
 /* dialogue */
 .dialogue {
   display: inline-block;  /* 'block' would make them always take the full width available */
-  /* width: 40%; */
   margin: 0px 10px;
   padding: 4px;
   border-bottom: 1px solid #999;
   border-radius: 0.4em;
 }
 
-/* .d-left {
-  float: left;
-}
-
-.d-right {
-  float: right;
-} */
-
 
 /* JSON */
 .show_json {
   text-align: right;
   font-size: smaller;
-  margin-right: 12px;  /* so the right side of this div lines up with the right edge of the last panel */
+  margin-right: 14px;  /* so the right side of this div lines up with the right edge of the last panel */
 }
 
 .show_json A {
@@ -138,7 +108,7 @@ H1 {
   border: 1px solid #999;
   padding: 0.5em;
   display: none;  /* hide it by default; the toggle link will show it */
-  margin-right: 12px;  /* so the right side of this div lines up with the right edge of the last panel */
+  margin-right: 14px;  /* so the right side of this div lines up with the right edge of the last panel */
 }
 
 

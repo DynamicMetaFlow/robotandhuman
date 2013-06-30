@@ -48,7 +48,7 @@
   },
   {
     "title": "It happens when they change something",
-    "date": "2002",
+    "date": "sometime in 2002",
     "panels": [
       {
         "left": {
@@ -79,6 +79,80 @@
         "right": {
           "char": "human-fl",
           "text": "I said don't be silly."
+        }
+      }
+    ]
+  },
+  {
+    "title": "This comic is false",
+    "date": "sometime in 2002",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "R, guess what?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "What?"
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "\"This sentence is false!\""
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": ""
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "My mom warned me about humans like you."
+        }
+      }
+    ]
+  },
+  {
+    "title": "I thought he was the son of Abraham",
+    "date": "15 June 2001",
+    "news": "This is <a href=\"http://www.stripcreator.com/comics/evil_d/21898\">not the first time I've written this strip</a>, and it may not be the last.  And yes, the <a href=\"http://en.wikipedia.org/wiki/Newtons_(cookie)\">Fig Newtons</a> reference was dated even then.",
+    "panels": [
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Hey, R. Why the long face?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "I just finished reading <i>I, Robot</i>. It saddens me to think that such a brilliant author as Isaac Asimov is no longer with us."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Isaac Asimov, huh? Wasn't he the guy who discovered gravity?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "You're thinking of Isaac Newton."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "I thought he was the guy who made those cookies. Oh, wait&mdash;it's not a cookie, it's fruit and cake!"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "I think I'm about to break the First Law of Robotics."
         }
       }
     ]
