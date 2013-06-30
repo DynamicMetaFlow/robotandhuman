@@ -1,5 +1,52 @@
 [
   {
+    "title": "OS Wars",
+    "date": "28 June 2013",
+    "news": "I hope you like this one because they're probably not getting any funnier.",
+    "panels": [
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Hey R, what operating system do you run?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "RobOS v11.20.3.<wbr>1377891 64 kb free"
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Oh, \"RobOS\", I get it. 'Cause it sounds like \"robot\"."
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "No, that's not why."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Oh... then is \"Rob\" short for the name of the person who programmed it?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "That's right."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": ""
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "His full name is \"Robintosh\"."
+        }
+      }
+    ]
+  },
+  {
     "title": "It happens when they change something",
     "date": "2002",
     "panels": [
@@ -32,53 +79,6 @@
         "right": {
           "char": "human-fl",
           "text": "I said don't be silly."
-        }
-      }
-    ]
-  },
-  {
-    "title": "OS Wars",
-    "date": "2002",
-    "news": "I hope you like this one because they're probably not getting any funnier.",
-    "panels": [
-      {
-        "left": {
-          "char": "human-fr",
-          "text": "Hey R, what operating system do you run?"
-        },
-        "right": {
-          "char": "robot-fl",
-          "text": "RobOS v11.20.3.1377864 64 kb free"
-        }
-      },
-      {
-        "left": {
-          "char": "human-fr",
-          "text": "Oh, \"RobOS\", I get it. 'Cause it sounds like \"robot\"."
-        },
-        "right": {
-          "char": "robot-fl",
-          "text": "No, that's not it."
-        }
-      },
-      {
-        "left": {
-          "char": "human-fr",
-          "text": "Because it was programmed by someone named Robert?"
-        },
-        "right": {
-          "char": "robot-fl",
-          "text": "Not quite."
-        }
-      },
-      {
-        "left": {
-          "char": "human-fr",
-          "text": "What, then?"
-        },
-        "right": {
-          "char": "robot-fl",
-          "text": "It's short for \"Robintosh\"."
         }
       }
     ]

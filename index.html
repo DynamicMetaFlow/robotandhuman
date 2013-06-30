@@ -2,22 +2,9 @@
 <html>
 <head>
 <title>Robot &amp; Human: A Webcomic</title>
-<script type="text/javascript" src="jquery-1.7.2.min.js"></script><!-- seems I have to use an old version because of qTip compatibility issues... -->
-<script type="text/javascript" src="jquery.qtip.js"></script>
-<script type="text/javascript" src="rhwc.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.qtip.min.css">
+<script type="text/javascript" src="jquery-2.0.1.min.js"></script><!-- seems I have to use an old version because of qTip compatibility issues... -->
+<script type="text/javascript" src="comics.js"></script>
 <link rel="stylesheet" type="text/css" href="rhwc.css">
-
-<script type="text/javascript">
-$(document).ready(function()  {
-  $('#targetlink').qtip({
-    content: {
-      attr: 'title'
-    }
-  })
-});
-</script>
-
 </head>
 
 <body>
@@ -28,10 +15,47 @@ see much here without it.</noscript>
 
 <div id="place"></div>
 
+
+<div id="blathering">
 <h2 id="about">About this comic</h2>
 
-<p>This page makes heavy use of <a href="http://jquery.com/">jQuery</a> and <a id="targetlink" title="moo"
-href="http://craigsworks.com/projects/qtip2/">qTip2</a>.  My gratitude to their authors.</p>
+<p>Robot &amp; Human is a JSON-powered webcomic.  What that means is that I drew
+some graphics and wrote some JavaScript and now all I have to do to make a new
+strip is write it in JSON.  If you think that sounds easier than just drawing a
+picture and uploading it, you might be a programmer.</p>
 
+<p>The original code for this project may be re-used and re-distributed under the terms of the 
+<a href="http://opensource.org/licenses/MIT">MIT License</a> (jQuery <a href="https://jquery.org/license/">also uses the 
+MIT License</a> as of this writing, but be aware that that could change).
+The writing and graphics may be used under the terms of the <a rel="license" 
+href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported 
+License</a>.</p>
+
+<p>If you want to set up this tool on your own site, you'll need to copy (and then probably modify) these files:</p>
+
+<ul>
+  <li>index.html (i.e. this page)&mdash;you'll probably want to modify it heavily, but you should keep the JS/CSS calls in the head, and note that comics.js needs the element with an ID of "place" so it knows where to insert things.</li>
+  <li><a href="http://jquery.com/download/">jQuery 2.0.1</a>, or another version if you prefer; I'm not aware of any compatibility issues</li>
+  <li><a href="comics.js">comics.js</a> (the "engine")</li>
+  <li><a href="rhwc.css">rhwc.css</a>&mdash;again, you'll probably make a lot of changes to this, but the code that comics.js produces won't make any sense at all without a lot of styling</li>
+  <li>maybe <a href="comics.json">comics.json</a>, just to see the format, although this is the bulk of the comic's content, so you'll eventually want to delete what's there and write your own</li>
+  <li>everything in the <a href="graphics/">graphics</a> directory, and/or you can make your own graphics</li>
+</ul>
+
+
+<h2 id="links">Links</h2>
+
+<p>Apparently writing webcomic tools is something I do.  Check out the <a
+href="https://github.com/Triskaideka/comicpub">Poor Man's Comic Publisher</a> on
+GitHub.  If you have a webserver where you can run PHP scripts, PMCP is a
+relatively low-effort way to make comics you've drawn available to a web
+audience.</p>
+
+<p>If you prefer the kind of comics tool where you don't have to draw anything,
+but also don't want to get your own web site and do want a wider variety of clip
+art, then <a href="http://www.stripcreator.com/">Stripcreator</a> is for you.
+(I didn't make this one.)</p>
+
+</div>
 </body>
 </html>

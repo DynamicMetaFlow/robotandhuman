@@ -16,7 +16,7 @@ H1 {
 .episode {
   clear: both;
   /* width: 80%; */
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 3.5em;
 }
 
@@ -46,42 +46,79 @@ H1 {
   position: relative;  /* so panels will be "positioned ancestors" of the images inside them */
 }
 
+.p-left, .p-right {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 50%;
+  /* height: 100%; */
+  /* min-height: 300px; */
+
+  position: absolute;
+  bottom: 0;
+}
+
+.p-left {
+  /* float: left; */
+  /* display: inline-block; */
+  /* background: green; */
+  left: 0;
+}
+
+.p-right {
+  /* float: right; */
+  /* display: inline-block; */
+  /* background: pink; */
+  right: 0;
+  text-align: right;
+}
+
+
+/* "extra classes" for panels */
 .dashed {
   border-style: dashed;
+}
+
+.taller {
+  /* for comics with lots of dialogue -- this should probably be applied to every panel in a strip, not just one */
+  height: 350px;
 }
 
 
 /* character images */
 .panel IMG {
-  position: absolute;
-  bottom: 10px;
+/*   position: absolute;
+  bottom: 10px; */
+  /* padding-top: 10px; */
+  margin: 10px;
 }
 
-.panel IMG.i-left {
+/* .panel IMG.i-left {
   left: 10px;
 }
 
 .panel IMG.i-right {
   right: 10px;
-}
+} */
 
 
 /* dialogue */
 .dialogue {
-  display: inline;
-  width: 40%;
-  margin: 10px;
-  padding-bottom: 4px;
+  display: inline-block;  /* 'block' would make them always take the full width available */
+  /* width: 40%; */
+  margin: 0px 10px;
+  padding: 4px;
   border-bottom: 1px solid #999;
+  border-radius: 0.4em;
 }
 
-.d-left {
+/* .d-left {
   float: left;
 }
 
 .d-right {
   float: right;
-}
+} */
 
 
 /* JSON */
@@ -118,3 +155,9 @@ H1 {
   display: none;
 }
 
+
+/* all that text at the end */
+#blathering {
+  margin: 3.5em 10% 0 5%;
+  border-top: 3px double #222;
+}
