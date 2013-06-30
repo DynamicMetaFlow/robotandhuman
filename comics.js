@@ -15,7 +15,7 @@ $(document).ready(function () {
     }
   }
 
-  ajaxobj.open('GET', 'comics.json');
+  ajaxobj.open('GET', 'comics.json.txt');
   ajaxobj.send(null);
 });
 
@@ -50,7 +50,7 @@ function display_comics(comics)  {
         c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
       }
       if (comics[i].panels[j].left.char)  {
-        c += '<br><img src="graphics/'+comics[i].panels[j].left.char+'.png">';
+        c += '<br><img src="'+comics[i].panels[j].left.char+'.png">';
       }
       c += '</div>';  // class="p-left"
 
@@ -60,7 +60,7 @@ function display_comics(comics)  {
         c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
       }
       if (comics[i].panels[j].right.char)  {
-        c += '<br><img src="graphics/'+comics[i].panels[j].right.char+'.png">';
+        c += '<br><img src="'+comics[i].panels[j].right.char+'.png">';
       }
       c += '</div>';  // class="p-right"
 
