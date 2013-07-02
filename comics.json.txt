@@ -1,4 +1,41 @@
 [
+ {
+    "title": "Not sure what year this takes place in",
+    "date": "02 July 2013",
+    "news": "I'm just going to assume that the reason you're not laughing is because you're not familiar with the <a href=\"http://www.math.uwaterloo.ca/tsp/problem/\">Travelling Salesman Problem</a>.",
+    "panels": [
+      {
+        "left": {
+          "char": "robot-fr",
+          "text": ""
+        },
+        "right": {
+          "char": "human-fl",
+          "text": "I got a new job selling encyclopedias door-to-door. Can you help me pick out a suit and tie that will impress my customers?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot-fr",
+          "text": "Well... I don't have access to any data on the fashion preferences of human encyclopedia purchasers."
+        },
+        "right": {
+          "char": "human-fl",
+          "text": "So what are you saying?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot-fr",
+          "text": "I don't think I can give you much help with your travelling salesman problem."
+        },
+        "right": {
+          "char": "human-fl",
+          "text": ""
+        }
+      }
+    ]
+  },
   {
     "title": "OS Wars",
     "date": "28 June 2013",
