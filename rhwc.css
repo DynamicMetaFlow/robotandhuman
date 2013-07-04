@@ -11,21 +11,40 @@ H1 {
   text-align: center;
 }
 
+a:link {
+  color: #36f;  /* matches the color of the human graphics */
+}
+
+a:hover {
+  color: #f00;
+}
+
 
 /* "episode" is the single wrapper for each comic and its attendant elements */
 .episode {
   clear: both;
   margin-left: 5%;
   margin-top: 3.5em;
+  position: relative;
+}
+
+
+/* prev/next links */
+.prevnext {
+  font-size: 150%;
+  position: absolute;
+  top: 1em;
+  left: -1.5em;
+}
+
+.prevnext a {
+  text-decoration: none;
 }
 
 
 /* The title and date field that precede the comic panels */
-.title, .date {
-  font-weight: bold;
-}
-
 .title {
+  font-weight: bold;
   float: left;
 }
 

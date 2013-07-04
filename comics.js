@@ -26,9 +26,20 @@ function display_comics(comics)  {
       c = '';  // string containing all of the code for this comic
 
   for (i = 0; i < comics.length; i++)  {
+    var id = 'e' + (comics.length - i);
+    var prev_id = 'e' + (comics.length - i - 1);
+    var next_id = 'e' + (comics.length - i + 1);
+
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
-    c = '<div class="episode" style="width: '+(267*comics[i].panels.length)+'px">';
+    c = '<div id="'+id+'" class="episode" style="width: '+(267*comics[i].panels.length)+'px">';
+
+    // prev/next links
+    c += '<div class="prevnext">';
+    if (i > 0)  { c += '<a href="#'+next_id+'" title="next comic up">&#x25b3;</a>'; }
+    c += '<br>';
+    if (i < comics.length - 1)  { c += '<a href="#'+prev_id+'" title="next comic down">&#x25bd;</a>'; }
+    c += '</div>';
 
     // title & date
     c += '<div class="title">'+comics[i].title+'</div><div class="date">'+comics[i].date+'</div><br>';
