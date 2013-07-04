@@ -21,18 +21,19 @@ $(document).ready(function () {
 
 
 function display_comics(comics)  {
-  var i = 0,   // loop watch variable for comics
-      j = 0,   // loop watch variable for panels
-      c = '';  // string containing all of the code for this comic
+  var i = 0,  // loop watch variable for comics
+      j = 0;  // loop watch variable for panels
 
+  // each comic:
   for (i = 0; i < comics.length; i++)  {
-    var id = 'e' + (comics.length - i);
-    var prev_id = 'e' + (comics.length - i - 1);
-    var next_id = 'e' + (comics.length - i + 1);
+    var id = 'e' + (comics.length - i),  // this comic's ID
+        prev_id = 'e' + (comics.length - i - 1),  // the ID of the previous comic
+        next_id = 'e' + (comics.length - i + 1),  // the ID of the next comic
+        c = '';  // string containing all of the code for this comic
 
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
-    c = '<div id="'+id+'" class="episode" style="width: '+(267*comics[i].panels.length)+'px">';
+    $('<div id="'+id+'" class="episode" style="width: '+(267*comics[i].panels.length)+'px"></div>\n').insertBefore('#place');
 
     // prev/next links
     c += '<div class="prevnext">';
@@ -87,8 +88,8 @@ function display_comics(comics)  {
       c += '<div class="news">'+comics[i].news+'</div>';
     }
 
-    c += '</div>\n';  // class="episode"
-    $(c).insertBefore('#place');
+    // add all of that code inside the newly created episode div
+    $('#'+id).html(c);
   }
 
 }
