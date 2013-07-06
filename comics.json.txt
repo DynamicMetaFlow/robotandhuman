@@ -1,5 +1,42 @@
 [
   {
+    "title": "Electric sheep",
+    "date": "06 July 2013",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "R, do you ever dream?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "I think so. I mean, sometimes things happen when I'm in standby mode that nobody else seems to remember later."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": ""
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "For example... you remember last month when robots burned Minneapolis to the ground and then built a mile-high mountain of human skulls over the ashes?"
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Uh... no."
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "Yeah, that one was a dream then."
+        }
+      }
+    ]
+  },
+  {
     "title": "Doomsday scenario",
     "date": "03 July 2013",
     "news": "",
@@ -112,7 +149,7 @@
   },
   {
     "title": "It happens when they change something",
-    "date": "sometime in 2002",
+    "date": "2002",
     "panels": [
       {
         "left": {
@@ -149,7 +186,7 @@
   },
   {
     "title": "This comic is false",
-    "date": "sometime in 2002",
+    "date": "2002",
     "news": "",
     "panels": [
       {
