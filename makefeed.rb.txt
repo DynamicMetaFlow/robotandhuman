@@ -30,13 +30,15 @@ comics.reverse.each do |c|
   # I should be adhering to a strict, reliably parsable format, but I wanted more freedom than that.
   begin
     # dd Month yyyy
-    t = Time.parse( c['date'].split(' ').reverse.join(' ') )  
+    t = Time.parse( c['date'].split(' ').reverse.join(' ') )
   rescue ArgumentError
     # or, just yyyy
     t = Time.parse( c['date'] + '-07-01' )  # roughly the middle of the year
   end
 
-  # Make sure this time is unique within the feed
+  # Make sure this time is unique within the feed.  This is why we loop over the comics in the reverse of their order in
+  # the JSON file (which we assume is reverse-chronological): so that if two (or more) comics have the same date and one 
+  # needs to have its time incremented, we do it to the one(s) that come later in chronological order.
   while alltimes.include?(t) do
     t = t + 1
   end

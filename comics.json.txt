@@ -37,6 +37,42 @@
     ]
   },
   {
+    "title": "30 RUN",
+    "date": "06 July 2013",
+    "panels": [
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Okay, R, I've got a joke for you.  10 and GOTO 10 are in a boat.  10 falls out.  Who's left?"
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "GOTO 10."
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": ""
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human-fr",
+          "text": "Uh...."
+        },
+        "right": {
+          "char": "robot-fl",
+          "text": "Would this joke work better if I were the one telling it?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Doomsday scenario",
     "date": "03 July 2013",
     "news": "",

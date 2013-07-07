@@ -8,9 +8,18 @@ $(document).ready(function () {
   ajaxobj.onreadystatechange = function () {
     if (ajaxobj.readyState == 4)  {
       if (ajaxobj.status == 200)  {
+
         display_comics( JSON.parse(ajaxobj.responseText) );
-      }  else  {  // This code never runs; figure out why
-        $("<p>Looks like your ol' webmaster screwed up.  There was an error loading the comics.</p>").insertBefore('#place');
+
+        // Since the comics aren't displayed until after the document is loaded, links from external pages/sources (such 
+        // as feed readers) to anchors within the page won't work without the following code.  We include the jQuery 
+        // plugin "scrollTo" just for this.
+        if (window.location.hash)  {
+          $.scrollTo(window.location.hash);
+        }
+
+      }  else  {
+        $("<p>Looks like your ol' webmaster screwed up. There was an error loading the comics.</p>").insertBefore('#place');
       }
     }
   }
