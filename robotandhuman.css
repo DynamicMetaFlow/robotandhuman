@@ -8,6 +8,7 @@ BODY {
 H1 {
   font-size: 400%;
   margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -17,6 +18,13 @@ a:link {
 
 a:hover {
   color: #f00;
+}
+
+
+/* the "subscribe" link */
+#feedlink {
+  text-align: center;
+  margin-top: 0;
 }
 
 
@@ -39,6 +47,7 @@ a:hover {
 
 .prevnext a {
   text-decoration: none;
+  color: #36f;
 }
 
 

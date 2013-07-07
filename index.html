@@ -6,12 +6,13 @@
 <script type="text/javascript" src="jquery-2.0.1.min.js"></script>
 <script type="text/javascript" src="jquery.scrollTo-1.4.3.1-min.js"></script>
 <script type="text/javascript" src="comics.js"></script>
-<link rel="stylesheet" type="text/css" href="rhwc.css">
+<link rel="stylesheet" type="text/css" href="robotandhuman.css">
 <link href="atom.txt" type="application/atom+xml" rel="alternate" title="ATOM Feed">
 </head>
 
 <body>
 <h1 id="ctitle">Robot &amp; Human</h1>
+<p id="feedlink"><a href="atom.txt">Subscribe (Atom)</a></p>
 
 <noscript>It looks like you have JavaScript turned off.  Sorry, but this whole page is an exercise in JS.  You won't 
 see much here without it.</noscript>
@@ -46,10 +47,12 @@ License</a>.</p>
 <ul>
   <li>index.html (i.e. this page)&mdash;you'll probably want to modify it heavily, but you should keep the JS/CSS calls in the head, and note that comics.js needs the element with an ID of "place" so it knows where to insert things.</li>
   <li><a href="http://jquery.com/download/">jQuery 2.0.1</a>, or another version if you prefer; I'm not aware of any compatibility issues</li>
+  <li>the <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">jQuery.ScrollTo</a> plugin</li>
   <li><a href="comics.js">comics.js</a> (the "engine")</li>
-  <li><a href="rhwc.css">rhwc.css</a>&mdash;again, you'll probably make a lot of changes to this, but the code that comics.js produces won't make any sense at all without a lot of styling</li>
-  <li>maybe <a href="comics.json.txt">comics.json</a>, just to see the format, although this is the bulk of the comic's content, so you'll eventually want to delete what's there and write your own</li>
+  <li><a href="robotandhuman.css">robotandhuman.css</a>&mdash;again, you'll probably make a lot of changes to this, but the code that comics.js produces won't make any sense at all without a lot of styling</li>
+  <li>maybe <a href="comics.json">comics.json</a>, just to see the format, although this is the bulk of the comic's content, so you'll eventually want to delete what's there and write your own</li>
   <li>the image files <a href="human-fl.png">human-fl.png</a>, <a href="human-fr.png">human-fr.png</a>, <a href="robot-fl.png">robot-fl.png</a>, and <a href="robot-fr.png">robot-fr.png</a>, and/or you can make your own graphics</li>
+  <li>optionally, <a href="makefeed.rb.txt">makefeed.rb.txt</a>, the Ruby script that generates the Atom feed file.  It requires the Ruby gems "<a href="http://rubygems.org/gems/tinyatom">tinyatom</a>" and "<a href="http://rubygems.org/gems/json_pure">json_pure</a>".  Each time you update comics.json, you'll have to remember to run this script and then upload atom.txt as well.</li>
 </ul>
 
 <p>P.S.: If the comics don't display right (or at all), you might be using an outdated web browser.  Please keep current!

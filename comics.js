@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
   }
 
-  ajaxobj.open('GET', 'comics.json.txt');
+  ajaxobj.open('GET', 'comics.json');
   ajaxobj.send(null);
 });
 

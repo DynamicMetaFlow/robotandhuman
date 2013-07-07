@@ -5,10 +5,9 @@ base_url = 'http://robotandhuman.neocities.org/'
 max_entries = 10   # only include this many entries in the feed
 
 # Read in the JSON file
-cfile = File.open('comics.json.txt', 'r')
-jsondoc = cfile.readlines.join()
+cfile = File.open('comics.json', 'r')
+comics = JSON.parse( cfile.readlines.join() )
 cfile.close
-comics = JSON.parse(jsondoc)
 
 
 # Create the feed object
@@ -57,5 +56,5 @@ end
 # Output the feed
 #puts feed.make(:indent => 2)  # for debugging
 ffile = File.new('atom.txt', 'w')
-ffile.write( feed.make(:indent => 2) )
+ffile.write( "\n" + feed.make(:indent => 2) )   # we start with a newline to get around NeoCities' dislike for Atom files
 ffile.close
