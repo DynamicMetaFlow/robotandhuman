@@ -15,7 +15,7 @@ feed = TinyAtom::Feed.new(
   base_url,
   'Robot & Human',
   "#{base_url}atom.txt",
-  :author_name => 'Triskaideka',
+  :author_name => 'Triskaideka'
 )
 
 
@@ -36,7 +36,7 @@ comics.reverse.each do |c|
   end
 
   # Make sure this time is unique within the feed.  This is why we loop over the comics in the reverse of their order in
-  # the JSON file (which we assume is reverse-chronological): so that if two (or more) comics have the same date and one 
+  # the JSON file (which we assume is reverse-chronological): so that if two (or more) comics have the same date and one
   # needs to have its time incremented, we do it to the one(s) that come later in chronological order.
   while alltimes.include?(t) do
     t = t + 1
