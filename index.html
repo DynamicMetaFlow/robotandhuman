@@ -5,6 +5,7 @@
 <!-- I didn't realize how much I missed GeoCities until NeoCities brought it back.... -->
 <script type="text/javascript" src="jquery-2.0.1.min.js"></script>
 <script type="text/javascript" src="jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="jcanvas.min.js"></script>
 <script type="text/javascript" src="comics.js"></script>
 <link rel="stylesheet" type="text/css" href="robotandhuman.css">
 <link href="atom.txt" type="application/atom+xml" rel="alternate" title="ATOM Feed">
@@ -47,8 +48,8 @@ License</a>.</p>
 <ul>
   <li>index.html (i.e. this page)&mdash;you'll probably want to modify it heavily, but you should keep the JS/CSS calls in the head, and note that comics.js needs the element with an ID of "place" so it knows where to insert things.</li>
   <li><a href="http://jquery.com/download/">jQuery 2.0.1</a>, or another version if you prefer; I'm not aware of any compatibility issues</li>
-  <li>the <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">jQuery.ScrollTo</a> plugin</li>
-  <li><a href="comics.js">comics.js</a> (the "engine")</li>
+  <li>the jQuery plugins <a href="http://plugins.jquery.com/jcanvas/">jCanvas</a> (for the dialogue tags) and <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">jQuery.ScrollTo</a> (so off-site links to anchors work)</li>
+  <li><a href="comics.js">comics.js</a> (the engine)</li>
   <li><a href="robotandhuman.css">robotandhuman.css</a>&mdash;again, you'll probably make a lot of changes to this, but the code that comics.js produces won't make any sense at all without a lot of styling</li>
   <li>maybe <a href="comics.json">comics.json</a>, just to see the format, although this is the bulk of the comic's content, so you'll eventually want to delete what's there and write your own</li>
   <li>the image files <a href="human-fl.png">human-fl.png</a>, <a href="human-fr.png">human-fr.png</a>, <a href="robot-fl.png">robot-fl.png</a>, and <a href="robot-fr.png">robot-fr.png</a>, and/or you can make your own graphics</li>

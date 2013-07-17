@@ -69,9 +69,12 @@ function display_comics(comics)  {
       c += '<div class="p-left">';
       if (comics[i].panels[j].left.text)  {
         c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
+        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+'"></canvas>';
       }
       if (comics[i].panels[j].left.char)  {
-        c += '<br><img src="'+comics[i].panels[j].left.char+'.png">';
+        c += '<br><img src="'+comics[i].panels[j].left.char+  // which character?
+             '-f'+(comics[i].panels[j].left.facing_out ? 'l' : 'r')+  // is the character facing inwards or outwards?
+             '.png">';
       }
       c += '</div>';  // class="p-left"
 
@@ -79,9 +82,12 @@ function display_comics(comics)  {
       c += '<div class="p-right">';
       if (comics[i].panels[j].right.text)  {
         c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
+        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+'"></canvas>';
       }
       if (comics[i].panels[j].right.char)  {
-        c += '<br><img src="'+comics[i].panels[j].right.char+'.png">';
+        c += '<br><img src="'+comics[i].panels[j].right.char+  // which character?
+             '-f'+(comics[i].panels[j].right.facing_out ? 'r' : 'l')+  // is the character facing inwards or outwards?
+             '.png">';
       }
       c += '</div>';  // class="p-right"
 
@@ -101,4 +107,45 @@ function display_comics(comics)  {
     $('#'+id).html(c);
   }
 
+  // Add the dialogue tags
+
+  // Human
+  // on the left
+  $('.p-left .dtag-human').drawQuadratic({
+    strokeStyle: "#999",
+    strokeWidth: 1,
+    x1: 5, y1: 0, // Start point
+    cx1: -1, cy1: 10, // Control point
+    x2: 7, y2: 15 // End point
+  });
+
+  // on the right
+  $('.p-right .dtag-human').drawQuadratic({
+    strokeStyle: "#999",
+    strokeWidth: 1,
+    x1: 10, y1: 0,
+    cx1: 16, cy1: 10,
+    x2: 8, y2: 15
+  });
+
+  // Robot
+  // on the left
+  $('.p-left .dtag-robot').drawLine({
+    strokeStyle: "#999",
+    strokeWidth: 1,
+    x1: 10, y1: 0,
+    x2: 13, y2: 8,
+    x3: 5, y3: 6,
+    x4: 7, y4: 15
+  });
+
+  // on the right
+  $('.p-right .dtag-robot').drawLine({
+    strokeStyle: "#999",
+    strokeWidth: 1,
+    x1: 5, y1: 0,
+    x2: 2, y2: 8,
+    x3: 10, y3: 6,
+    x4: 8, y4: 15
+  });
 }

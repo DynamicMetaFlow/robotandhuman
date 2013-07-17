@@ -6,31 +6,31 @@
     "panels": [
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "R, do you ever dream?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "I think so. I mean, sometimes things happen when I'm in standby mode that nobody else seems to remember later."
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": ""
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "For example... you remember last month when robots burned Minneapolis to the ground and then built a mile-high mountain of human skulls over the ashes?"
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Uh... no."
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "Yeah, that one was a dream then."
         }
       }
@@ -42,31 +42,31 @@
     "panels": [
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Okay, R, I've got a joke for you.  10 and GOTO 10 are in a boat.  10 falls out.  Who's left?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "GOTO 10."
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": ""
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": ""
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Uh...."
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "Would this joke work better if I were the one telling it?"
         }
       }
@@ -79,21 +79,21 @@
     "panels": [
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "You know, a friend of mine says that robots are going to steal all of humans' jobs away from them."
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "Perish the thought!"
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Well, it's a relief to hear you say&mdash;"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "I mean, I was told that the end goal was to get <i>you</i> to do all of <i>our</i> work."
         }
       }
@@ -106,31 +106,31 @@
     "panels": [
       {
         "left": {
-          "char": "robot-fr",
+          "char": "robot",
           "text": ""
         },
         "right": {
-          "char": "human-fl",
+          "char": "human",
           "text": "I got a new job selling encyclopedias door-to-door. Can you help me pick out a suit and tie that will impress my customers?"
         }
       },
       {
         "left": {
-          "char": "robot-fr",
+          "char": "robot",
           "text": "Well... I don't have access to any data on the fashion preferences of human encyclopedia purchasers."
         },
         "right": {
-          "char": "human-fl",
+          "char": "human",
           "text": "So what are you saying?"
         }
       },
       {
         "left": {
-          "char": "robot-fr",
+          "char": "robot",
           "text": "I don't think I can give you much help with your travelling salesman problem."
         },
         "right": {
-          "char": "human-fl",
+          "char": "human",
           "text": ""
         }
       }
@@ -143,41 +143,41 @@
     "panels": [
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Hey R, what operating system do you run?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "RobOS v11.20.3.<wbr>1377891 64 kb free"
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Oh, \"RobOS\", I get it. 'Cause it sounds like \"robot\"."
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "No, that's not why."
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Oh... then is \"Rob\" short for the name of the person who programmed it?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "That's right."
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": ""
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "His full name is \"Robintosh\"."
         }
       }
@@ -189,32 +189,32 @@
     "panels": [
       {
         "left": {
-          "char": "robot-fr",
+          "char": "robot",
           "text": "H, do you ever wonder if maybe we're just brains in jars, and our world could be blinked out of existence by a hardware failure?"
         },
         "right": {
-          "char": "human-fl",
+          "char": "human",
           "text": ""
         }
       },
       {
         "extra_classes": "dashed",
         "left": {
-          "char": "robot-fr",
+          "char": "robot",
           "text": ""
         },
         "right": {
-          "char": "human-fl",
+          "char": "human",
           "text": "D--'t b- si--y."
         }
       },
       {
         "left": {
-          "char": "robot-fr",
+          "char": "robot",
           "text": "What?"
         },
         "right": {
-          "char": "human-fl",
+          "char": "human",
           "text": "I said don't be silly."
         }
       }
@@ -227,31 +227,31 @@
     "panels": [
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "R, guess what?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "What?"
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "\"This sentence is false!\""
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": ""
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": ""
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "My mom warned me about humans like you."
         }
       }
@@ -261,34 +261,35 @@
     "title": "I thought he was the son of Abraham",
     "date": "15 June 2001",
     "news": "This is <a href=\"http://www.stripcreator.com/comics/evil_d/21898\">not the first time I've written this strip</a>, and it might not be the last.  And yes, the <a href=\"http://en.wikipedia.org/wiki/Newtons_(cookie)\">Fig Newtons</a> reference was dated even then.",
+    "extra_classes": "taller",
     "panels": [
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Hey, R. Why the long face?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "I just finished reading <i>I, Robot</i>. It saddens me to think that such a brilliant author as Isaac Asimov is no longer with us."
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "Isaac Asimov, huh? Wasn't he the guy who discovered gravity?"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "You're thinking of Isaac Newton."
         }
       },
       {
         "left": {
-          "char": "human-fr",
+          "char": "human",
           "text": "I thought he was the guy who made those cookies. Oh, wait&mdash;it's not a cookie, it's fruit and cake!"
         },
         "right": {
-          "char": "robot-fl",
+          "char": "robot",
           "text": "I think I'm about to break the First Law of Robotics."
         }
       }
