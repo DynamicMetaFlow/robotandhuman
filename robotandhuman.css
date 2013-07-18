@@ -120,7 +120,7 @@ a:hover {
 
 
 /* dialogue tags */
-.dtag-human, .dtag-robot {
+.dtag-human, .dtag-robot, .dtag-human-thought, .dtag-robot-thought {
   margin: 0 15px;
 }
 

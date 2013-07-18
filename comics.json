@@ -1,5 +1,53 @@
 [
   {
+    "title": "Last modified date",
+    "date": "17 July 2013",
+    "news": "Mostly showing off some new features here.",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "facing_out": true,
+          "thought": true,
+          "text": "Where's H? He told me to meet him here...."
+        },
+        "right": {}
+      },
+      {
+        "left": {
+          "char": "robot",
+          "facing_out": true,
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "SURPRISE! HAPPY BIRTHDAY!"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Er... I'm incapable of experiencing surprise, and I have no defined birthday."
+        },
+        "right": {
+          "char": "human",
+          "text": "Anybody ever tell you you're a hard guy to throw a party for?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Electric sheep",
     "date": "07 July 2013",
     "extra_classes": "taller",

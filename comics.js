@@ -69,10 +69,12 @@ function display_comics(comics)  {
       c += '<div class="p-left">';
       if (comics[i].panels[j].left.text)  {
         c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
-        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+'"></canvas>';
+        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+
+             (comics[i].panels[j].left.thought ? '-thought' : '')+'"></canvas>';
       }
       if (comics[i].panels[j].left.char)  {
         c += '<br><img src="'+comics[i].panels[j].left.char+  // which character?
+             (comics[i].panels[j].left.pose ? '-'+comics[i].panels[j].left.pose : '')+  // any special pose?
              '-f'+(comics[i].panels[j].left.facing_out ? 'l' : 'r')+  // is the character facing inwards or outwards?
              '.png">';
       }
@@ -82,10 +84,12 @@ function display_comics(comics)  {
       c += '<div class="p-right">';
       if (comics[i].panels[j].right.text)  {
         c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
-        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+'"></canvas>';
+        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+
+             (comics[i].panels[j].right.thought ? '-thought' : '')+'"></canvas>';
       }
       if (comics[i].panels[j].right.char)  {
         c += '<br><img src="'+comics[i].panels[j].right.char+  // which character?
+             (comics[i].panels[j].right.pose ? '-'+comics[i].panels[j].right.pose : '')+  // any special pose?
              '-f'+(comics[i].panels[j].right.facing_out ? 'r' : 'l')+  // is the character facing inwards or outwards?
              '.png">';
       }
@@ -108,44 +112,116 @@ function display_comics(comics)  {
   }
 
   // Add the dialogue tags
+  var dtag_color = "#999",
+      dtag_thickness = 1;
 
-  // Human
-  // on the left
+  // Human, speech, on the left
   $('.p-left .dtag-human').drawQuadratic({
-    strokeStyle: "#999",
-    strokeWidth: 1,
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
     x1: 5, y1: 0, // Start point
     cx1: -1, cy1: 10, // Control point
     x2: 7, y2: 15 // End point
   });
 
-  // on the right
+  // Human, speech, on the right
   $('.p-right .dtag-human').drawQuadratic({
-    strokeStyle: "#999",
-    strokeWidth: 1,
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
     cx1: 16, cy1: 10,
     x2: 8, y2: 15
   });
 
-  // Robot
-  // on the left
+  // Human, thought, on the left
+  $('.p-left .dtag-human-thought').drawArc({
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
+    x: 9, y: 3,
+    radius: 5
+  }).drawArc({
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
+    x: 4, y: 8,
+    radius: 3
+  }).drawArc({
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
+    x: 7, y: 12,
+    radius: 2
+  });
+
+  // Human, thought, on the right
+  $('.p-right .dtag-human-thought').drawArc({
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
+    x: 6, y: 3,
+    radius: 5
+  }).drawArc({
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
+    x: 11, y: 8,
+    radius: 3
+  }).drawArc({
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
+    x: 8, y: 12,
+    radius: 2
+  });
+
+  // Robot, speech, on the left
   $('.p-left .dtag-robot').drawLine({
-    strokeStyle: "#999",
-    strokeWidth: 1,
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
     x2: 13, y2: 8,
     x3: 5, y3: 6,
     x4: 7, y4: 15
   });
 
-  // on the right
+  // Robot, speech, on the right
   $('.p-right .dtag-robot').drawLine({
-    strokeStyle: "#999",
-    strokeWidth: 1,
+    strokeStyle: dtag_color,
+    strokeWidth: dtag_thickness,
     x1: 5, y1: 0,
     x2: 2, y2: 8,
     x3: 10, y3: 6,
     x4: 8, y4: 15
+  });
+
+  // Robot, thought, on the left
+  $('.p-left .dtag-robot-thought').drawRect({
+    strokeStyle: dtag_color,
+    x: 10, y: 2,
+    width: 7, height: 5,
+    fromCenter: true
+  }).drawRect({
+    strokeStyle: dtag_color,
+    x: 7, y: 8,
+    width: 5, height: 5,
+    fromCenter: true
+  }).drawRect({
+    strokeStyle: dtag_color,
+    x: 9, y: 13,
+    width: 3, height: 3,
+    fromCenter: true
+  });
+
+  // Robot, thought, on the right
+  $('.p-right .dtag-robot-thought').drawRect({
+    strokeStyle: dtag_color,
+    x: 5, y: 2,
+    width: 7, height: 5,
+    fromCenter: true
+  }).drawRect({
+    strokeStyle: dtag_color,
+    x: 8, y: 7,
+    width: 5, height: 5,
+    fromCenter: true
+  }).drawRect({
+    strokeStyle: dtag_color,
+    x: 6, y: 11,
+    width: 3, height: 3,
+    fromCenter: true
   });
 }
