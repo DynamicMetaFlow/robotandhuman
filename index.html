@@ -36,25 +36,13 @@ some graphics and wrote some JavaScript and now all I have to do to make a new
 strip is write it in JSON.  If you think that sounds easier than just drawing a
 picture and uploading it, you might be a programmer.</p>
 
-<p>The code for this project may be re-used and re-distributed under the terms of the 
-<a href="http://opensource.org/licenses/MIT">MIT License</a> (jQuery is licensed separately, but as of this writing, 
-<a href="https://jquery.org/license/">also uses the MIT License</a>).
+<p>If you want to see how any of this works, or perhaps use it yourself, check out 
+<a href="https://github.com/Triskaideka/robotandhuman">the GitHub repository</a>.
+The code is available under the terms of the 
+<a href="http://opensource.org/licenses/MIT">MIT License</a> (note that jQuery and its plugins are separate projects).
 The writing and graphics may be used under the terms of the <a rel="license" 
 href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported 
 License</a>.</p>
-
-<p>If you want to set up this tool on your own site, you'll need to copy (and then probably modify) these files:</p>
-
-<ul>
-  <li>index.html (i.e. this page)&mdash;you'll probably want to modify it heavily, but you should keep the JS/CSS calls in the head, and note that comics.js needs the element with an ID of "place" so it knows where to insert things.</li>
-  <li><a href="http://jquery.com/download/">jQuery 2.0.1</a>, or another version if you prefer; I'm not aware of any compatibility issues</li>
-  <li>the jQuery plugins <a href="http://plugins.jquery.com/jcanvas/">jCanvas</a> (for the dialogue tags) and <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">jQuery.ScrollTo</a> (so off-site links to anchors work)</li>
-  <li><a href="comics.js">comics.js</a> (the engine)</li>
-  <li><a href="robotandhuman.css">robotandhuman.css</a>&mdash;again, you'll probably make a lot of changes to this, but the code that comics.js produces won't make any sense at all without a lot of styling</li>
-  <li>maybe <a href="comics.json">comics.json</a>, just to see the format, although this is the bulk of the comic's content, so you'll eventually want to delete what's there and write your own</li>
-  <li>the image files <a href="human-fl.png">human-fl.png</a>, <a href="human-fr.png">human-fr.png</a>, <a href="robot-fl.png">robot-fl.png</a>, <a href="robot-fr.png">robot-fr.png</a>, <a href="human-handsup-fl.png">human-handsup-fl.png</a>, <a href="human-handsup-fr.png">human-handsup-fr.png</a>, <a href="robot-handsup-fl.png">robot-handsup-fl.png</a>, and <a href="robot-handsup-fr.png">robot-handsup-fr.png</a>, and/or you can make your own graphics</li>
-  <li>optionally, <a href="makefeed.rb.txt">makefeed.rb.txt</a>, the Ruby script that generates the Atom feed file.  It requires the Ruby gems "<a href="http://rubygems.org/gems/tinyatom">tinyatom</a>" and "<a href="http://rubygems.org/gems/json_pure">json_pure</a>".  Each time you update comics.json, you'll have to remember to run this script and then upload atom.txt as well.</li>
-</ul>
 
 <p>P.S.: If the comics don't display right (or at all), you might be using an outdated web browser.  Please keep current!
 Web developers everywhere will thank you for it.</p>

@@ -1,0 +1,9 @@
+The original code in this project may be copied and re-used under the terms of the MIT License:
+
+  http://opensource.org/licenses/MIT
+
+Note that jQuery, jQuery.ScrollTo, and jCanvas are separate projects with separate owners.  jQuery and jCanvas also use the MIT License, and are re-distributed here under those terms.  I don't see a specific license mentioned for jQuery.ScrollTo.
+
+The original writing and graphics in this project may be copied and re-used under the terms of the Creative Commons Attribution-ShareAlike 3.0 Unported License:
+
+  http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
