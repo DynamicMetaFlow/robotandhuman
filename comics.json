@@ -1,5 +1,42 @@
 [
   {
+    "title": "Robot stuff",
+    "date": "19 July 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Want to go to the movies?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Robots aren't allowed into movie theaters. We're basically giant recording devices."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Oh... well then what <i>do</i> you do for fun?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh, you know, robot stuff... calculate complex math equations in my head... transform into a car and go for a drive...."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "...I can never tell when you're screwing with me."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh yeah, screwing with you, that's another big one."
+        }
+      }
+    ]
+  },
+  {
     "title": "Last modified date",
     "date": "17 July 2013",
     "news": "Mostly showing off some new features here.",
