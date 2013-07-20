@@ -118,6 +118,9 @@ a:hover {
   border: 1px solid #999;
   border-radius: 0.4em;
   text-align: center;
+  background-color: #fff;  /* in case the dialogue bubbles stretch out of the panel */
+  line-height: 15px;  /* setting an explicit line-height in pixels alleviates, but does not solve,
+                         some cross-system variations in the size of the dialogue bubbles */
 }
 
 
