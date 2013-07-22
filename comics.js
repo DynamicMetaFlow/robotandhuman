@@ -1,6 +1,12 @@
 // (c) 2013 Triskaideka.
 // May be re-used and re-distributed under the terms of the MIT License ( http://opensource.org/licenses/MIT ).
 
+// Variables that need to be global:
+var num_comics_shown = 0,  // how many comics are being displayed right now?
+    at_a_time = 5,         // how many comics to show initially, and each time "show more comics" is clicked
+    comic_list = {};       // all of the content information for the comics -- comes from the JSON file
+
+
 $(document).ready(function () {
   var ajaxobj = new XMLHttpRequest();
 
@@ -9,7 +15,8 @@ $(document).ready(function () {
     if (ajaxobj.readyState == 4)  {
       if (ajaxobj.status == 200)  {
 
-        display_comics( JSON.parse(ajaxobj.responseText) );
+        comic_list = JSON.parse(ajaxobj.responseText);
+        display_comics(comic_list, at_a_time);
 
         // Since the comics aren't displayed until after the document is loaded, links from external pages/sources (such 
         // as feed readers) to anchors within the page won't work without the following code.  We include the jQuery 
@@ -19,7 +26,7 @@ $(document).ready(function () {
         }
 
       }  else  {
-        $("<p>Looks like your ol' webmaster screwed up. There was an error loading the comics.</p>").insertBefore('#place');
+        $("<p>Looks like your ol' webmaster screwed up. There was an error loading the comics.</p>").insertBefore('#more');
       }
     }
   }
@@ -29,12 +36,23 @@ $(document).ready(function () {
 });
 
 
-function display_comics(comics)  {
+function display_comics(comics, how_many)  {
   var i = 0,  // loop watch variable for comics
-      j = 0;  // loop watch variable for panels
+      j = 0,  // loop watch variable for panels
+      target = num_comics_shown + how_many;  // "target" is the number of comics at which we stop showing more
+
+  // If the request was for a comic that's so far down the list that it wouldn't normally be shown by default, 
+  // increase the number of comics we're showing so that the requested one will be the last on the list.
+  if ( window.location.hash && target < comics.length + 1 - window.location.hash.substr(2) )  {
+    target = comics.length + 1 - window.location.hash.substr(2);
+
+    // Enforce that the number of comics being displayed is always a multiple of 'at_a_time'.
+    // I'm not completely sold on this rule, but at the moment I like it better than the alternative.
+    while (target % at_a_time != 0)  { target++; }
+  }
 
   // each comic:
-  for (i = 0; i < comics.length; i++)  {
+  for (i = num_comics_shown; i < target && i < comics.length; i++)  {
     var id = 'e' + (comics.length - i),  // this comic's ID
         prev_id = 'e' + (comics.length - i - 1),  // the ID of the previous comic
         next_id = 'e' + (comics.length - i + 1),  // the ID of the next comic
@@ -42,13 +60,19 @@ function display_comics(comics)  {
 
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
-    $('<div id="'+id+'" class="episode" style="width: '+(267*comics[i].panels.length)+'px"></div>\n').insertBefore('#place');
+    $('<div id="'+id+'" class="episode" style="width: '+(267*comics[i].panels.length)+'px"></div>\n').insertBefore('#more');
 
     // prev/next links
     c += '<div class="prevnext">';
     if (i > 0)  { c += '<a href="#'+next_id+'" title="next comic up">&#x25b3;</a>'; }
     c += '<br>';
-    if (i < comics.length - 1)  { c += '<a href="#'+prev_id+'" title="next comic down">&#x25bd;</a>'; }
+
+    // the 'next' link has a little more magic than the 'previous' link in order to ensure that it will still work when 
+    // the next comic in line hasn't actually been displayed yet.
+    if (i < comics.length - 1)  {
+      c += '<a onClick="window.location.hash=\''+prev_id+'\'; display_comics(comic_list, 0)" href="#'+
+           prev_id+'" title="next comic down">&#x25bd;</a>';
+    }
     c += '</div>';
 
     // title & date
@@ -109,6 +133,10 @@ function display_comics(comics)  {
 
     // add all of that code inside the newly created episode div
     $('#'+id).html(c);
+    num_comics_shown++;
+
+    // if there aren't any more comics, hide the "show more comics" link
+    if (num_comics_shown >= comics.length)  { $('#more').hide(); }
   }
 
   // Add the dialogue tags

@@ -2,7 +2,7 @@ require 'tinyatom'    # gem install tinyatom
 require 'json/pure'   # gem install json_pure
 
 base_url = 'http://robotandhuman.neocities.org/'
-max_entries = 10   # only include this many entries in the feed
+max_entries = 20   # only include this many entries in the feed
 
 # Read in the JSON file
 cfile = File.open('comics.json', 'r')

@@ -159,10 +159,17 @@ a:hover {
 }
 
 
-/* placeholder -- just an empty div that marks the place where the comics end */
-#place {
+/* the "more" element contains the "show more comics" link and also marks the place where the comics end */
+#more {
   clear: both;
-  display: none;
+  margin: 4em 5%;
+}
+
+#more a {
+  border: 1px solid #999;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-decoration: none;
 }
 
 
