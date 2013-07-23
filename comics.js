@@ -19,11 +19,8 @@ $(document).ready(function () {
         display_comics(comic_list, at_a_time);
 
         // Since the comics aren't displayed until after the document is loaded, links from external pages/sources (such 
-        // as feed readers) to anchors within the page won't work without the following code.  We include the jQuery 
-        // plugin "scrollTo" just for this.
-        if (window.location.hash)  {
-          $.scrollTo(window.location.hash);
-        }
+        // as feed readers) to anchors within the page won't work without the following code.
+        if (window.location.hash)  { $.scrollTo( window.location.hash, 500 ); }
 
       }  else  {
         $("<p>Looks like your ol' webmaster screwed up. There was an error loading the comics.</p>").insertBefore('#more');
@@ -64,13 +61,17 @@ function display_comics(comics, how_many)  {
 
     // prev/next links
     c += '<div class="prevnext">';
-    if (i > 0)  { c += '<a href="#'+next_id+'" title="next comic up">&#x25b3;</a>'; }
+    if (i > 0)  {
+      c += '<a onClick="$.scrollTo(\'#'+next_id+'\', 300)" href="#'+next_id+'" title="next comic up">&#x25b3;</a>';
+    }
     c += '<br>';
 
-    // the 'next' link has a little more magic than the 'previous' link in order to ensure that it will still work when 
-    // the next comic in line hasn't actually been displayed yet.
+    // The 'next' link has a little more magic than the 'previous' link in order to ensure that it will still work when 
+    // the next comic in line hasn't actually been displayed yet.  Calling scrollTo() twice is not a mistake: the first 
+    // call covers us if the target comic is already being displayed, and the second if it isn't.
     if (i < comics.length - 1)  {
-      c += '<a onClick="window.location.hash=\''+prev_id+'\'; display_comics(comic_list, 0)" href="#'+
+      c += '<a onClick="$.scrollTo(\'#'+prev_id+'\', 300); window.location.hash=\''+prev_id+
+           '\'; display_comics(comic_list, 0); $.scrollTo(\'#'+prev_id+'\', 300);" href="#'+
            prev_id+'" title="next comic down">&#x25bd;</a>';
     }
     c += '</div>';
