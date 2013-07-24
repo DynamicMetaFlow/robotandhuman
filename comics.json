@@ -1,5 +1,62 @@
 [
   {
+    "title": "Margin of error",
+    "date": "24 July 2013",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "I've got a surprise for you, H!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Oh yeah? What is it?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, I know how you humans worry about the future. So I gathered some data on your vital stats and lifestyle, and I calculated how much longer you have to live!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Uh... you did?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Yup! According to my estimate, you've got another 10 years, 5 months, 13 days, 3 hours, and 8 minutes."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "10 years... that's... wow.  But it's just an estimate, right?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh yes, just an estimate."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Heh, whew&mdash;"
+        },
+        "right": {
+          "char": "robot",
+          "text": "There's a margin of error of about 74 seconds."
+        }
+      }
+    ]
+  },
+  {
     "title": "Robot stuff",
     "date": "19 July 2013",
     "news": "",

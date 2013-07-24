@@ -4,8 +4,8 @@
 // Variables that need to be global:
 var num_comics_shown = 0,  // how many comics are being displayed right now?
     at_a_time = 5,         // how many comics to show initially, and each time "show more comics" is clicked
-    comic_list = {};       // all of the content information for the comics -- comes from the JSON file
-
+    comic_list = {},       // all of the content information for the comics -- comes from the JSON file
+    scrollto_settings = { "axis": "y" };  // we call scrollTo a lot; easier to store the settings object in one place
 
 $(document).ready(function () {
   var ajaxobj = new XMLHttpRequest();
@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         // Since the comics aren't displayed until after the document is loaded, links from external pages/sources (such 
         // as feed readers) to anchors within the page won't work without the following code.
-        if (window.location.hash)  { $.scrollTo( window.location.hash, 500 ); }
+        if (window.location.hash)  { $.scrollTo( window.location.hash, 'normal', scrollto_settings ); }
 
       }  else  {
         $("<p>Looks like your ol' webmaster screwed up. There was an error loading the comics.</p>").insertBefore('#more');
@@ -33,7 +33,7 @@ $(document).ready(function () {
 });
 
 
-function display_comics(comics, how_many)  {
+function display_comics(comics, how_many, slide)  {
   var i = 0,  // loop watch variable for comics
       j = 0,  // loop watch variable for panels
       target = num_comics_shown + how_many;  // "target" is the number of comics at which we stop showing more
@@ -57,12 +57,13 @@ function display_comics(comics, how_many)  {
 
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
-    $('<div id="'+id+'" class="episode" style="width: '+(267*comics[i].panels.length)+'px"></div>\n').insertBefore('#more');
+    c += '<div id="'+id+'" class="episode" style="display:none; width: '+(267*comics[i].panels.length)+'px">';
 
     // prev/next links
     c += '<div class="prevnext">';
     if (i > 0)  {
-      c += '<a onClick="$.scrollTo(\'#'+next_id+'\', 300)" href="#'+next_id+'" title="next comic up">&#x25b3;</a>';
+      c += '<a onClick="$.scrollTo(\'#'+next_id+'\', \'fast\', scrollto_settings)" href="#'+
+           next_id+'" title="next comic up">&#x25b3;</a>';
     }
     c += '<br>';
 
@@ -70,8 +71,8 @@ function display_comics(comics, how_many)  {
     // the next comic in line hasn't actually been displayed yet.  Calling scrollTo() twice is not a mistake: the first 
     // call covers us if the target comic is already being displayed, and the second if it isn't.
     if (i < comics.length - 1)  {
-      c += '<a onClick="$.scrollTo(\'#'+prev_id+'\', 300); window.location.hash=\''+prev_id+
-           '\'; display_comics(comic_list, 0); $.scrollTo(\'#'+prev_id+'\', 300);" href="#'+
+      c += '<a onClick="if (!$(\'#'+prev_id+'\').length) { window.location.hash=\'#'+prev_id+
+           '\'; display_comics(comic_list, 0); } $.scrollTo(\'#'+prev_id+'\', \'fast\', scrollto_settings);" href="#'+
            prev_id+'" title="next comic down">&#x25bd;</a>';
     }
     c += '</div>';
@@ -124,7 +125,7 @@ function display_comics(comics, how_many)  {
     }
 
     // "show JSON" feature
-    c += '<div class="show_json"><a href="javascript:void(0)" onClick="$(this.parentNode).next().toggle()">&#x2b10; show/hide JSON</a></div>';
+    c += '<div class="show_json"><a href="javascript:void(0)" onClick="$(this.parentNode).next().slideToggle()">&#x2b10; show/hide JSON</a></div>';
     c += '<div class="json">'+JSON.stringify(comics[i], null, "  ").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')+'</div>';
 
     // news
@@ -132,8 +133,12 @@ function display_comics(comics, how_many)  {
       c += '<div class="news">'+comics[i].news+'</div>';
     }
 
-    // add all of that code inside the newly created episode div
-    $('#'+id).html(c);
+    c += '</div>\n';  // class="episode"
+
+    // Add all of that code inside the newly created episode div.
+    // "slide", indicating whether to animate the addition of the new comics, should be set only when display_comics() is
+    // called from the "show more comics" link.  Otherwise it will conflict with scrollTo.
+    $(c).insertBefore('#more').slideDown( slide ? 'normal' : 0 );
     num_comics_shown++;
 
     // if there aren't any more comics, hide the "show more comics" link
@@ -145,25 +150,25 @@ function display_comics(comics, how_many)  {
       dtag_thickness = 1;
 
   // Human, speech, on the left
-  $('.p-left .dtag-human').drawQuadratic({
+  $('.p-left .dtag-human').not('.has-dtag').drawQuadratic({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 5, y1: 0, // Start point
     cx1: -1, cy1: 10, // Control point
     x2: 7, y2: 15 // End point
-  });
+  }).addClass('has-dtag');  // apply the 'has-dtag' class to avoid drawing dialogue tags on any canvas that already has one
 
   // Human, speech, on the right
-  $('.p-right .dtag-human').drawQuadratic({
+  $('.p-right .dtag-human').not('.has-dtag').drawQuadratic({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
     cx1: 16, cy1: 10,
     x2: 8, y2: 15
-  });
+  }).addClass('has-dtag');
 
   // Human, thought, on the left
-  $('.p-left .dtag-human-thought').drawArc({
+  $('.p-left .dtag-human-thought').not('.has-dtag').drawArc({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x: 9, y: 3,
@@ -178,10 +183,10 @@ function display_comics(comics, how_many)  {
     strokeWidth: dtag_thickness,
     x: 7, y: 12,
     radius: 2
-  });
+  }).addClass('has-dtag');
 
   // Human, thought, on the right
-  $('.p-right .dtag-human-thought').drawArc({
+  $('.p-right .dtag-human-thought').not('.has-dtag').drawArc({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x: 6, y: 3,
@@ -196,30 +201,30 @@ function display_comics(comics, how_many)  {
     strokeWidth: dtag_thickness,
     x: 8, y: 12,
     radius: 2
-  });
+  }).addClass('has-dtag');
 
   // Robot, speech, on the left
-  $('.p-left .dtag-robot').drawLine({
+  $('.p-left .dtag-robot').not('.has-dtag').drawLine({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
     x2: 13, y2: 8,
     x3: 5, y3: 6,
     x4: 7, y4: 15
-  });
+  }).addClass('has-dtag');
 
   // Robot, speech, on the right
-  $('.p-right .dtag-robot').drawLine({
+  $('.p-right .dtag-robot').not('.has-dtag').drawLine({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 5, y1: 0,
     x2: 2, y2: 8,
     x3: 10, y3: 6,
     x4: 8, y4: 15
-  });
+  }).addClass('has-dtag');
 
   // Robot, thought, on the left
-  $('.p-left .dtag-robot-thought').drawRect({
+  $('.p-left .dtag-robot-thought').not('.has-dtag').drawRect({
     strokeStyle: dtag_color,
     x: 10, y: 2,
     width: 7, height: 5,
@@ -234,10 +239,10 @@ function display_comics(comics, how_many)  {
     x: 9, y: 13,
     width: 3, height: 3,
     fromCenter: true
-  });
+  }).addClass('has-dtag');
 
   // Robot, thought, on the right
-  $('.p-right .dtag-robot-thought').drawRect({
+  $('.p-right .dtag-robot-thought').not('.has-dtag').drawRect({
     strokeStyle: dtag_color,
     x: 5, y: 2,
     width: 7, height: 5,
@@ -252,5 +257,5 @@ function display_comics(comics, how_many)  {
     x: 6, y: 11,
     width: 3, height: 3,
     fromCenter: true
-  });
+  }).addClass('has-dtag');
 }

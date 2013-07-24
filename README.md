@@ -9,6 +9,6 @@ If you like webcomic tools and/or comics about robots and humans, then you shoul
 
 ## Dependencies
 
-The comics are displayed using [jQuery](http://jquery.com/) and two jQuery plugins, [jCanvas](http://plugins.jquery.com/jcanvas/) (to draw the dialogue tags) and [ScrollTo](http://flesler.blogspot.com/2007/10/jqueryscrollto.html) (which makes sure off-site links to individual comics will work).  These files are all included in this repository.  You could probably use different versions of them if you wanted to.
+The comics are displayed using [jQuery](http://jquery.com/) and two jQuery plugins, [jCanvas](http://plugins.jquery.com/jcanvas/) (to draw the dialogue tags) and [ScrollTo](http://flesler.blogspot.com/2007/10/jqueryscrollto.html) (for animated scrolling).  These files are all included in this repository.  You could probably use different versions of them if you wanted to.
 
 The Atom feed is generated using a [Ruby](http://www.ruby-lang.org/) script, which requires the [gems](http://rubygems.org/) [tinyatom](http://rubygems.org/gems/tinyatom) and [json_pure](http://rubygems.org/gems/json_pure).  Those are not included in this repository.
