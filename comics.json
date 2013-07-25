@@ -1,4 +1,56 @@
 [
+ {
+    "title": "Spreadsheets",
+    "date": "25 July 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "R! Are you the one who sorted and analyzed all my spreadsheets?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Sure am!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "I thought you said you <i>weren't</i> trying to steal my job.  That was a day's worth of work! What will my boss say when I tell him?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Why would you tell your boss?  Let him think you're still working on it and we can go shoot pool all day."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "facing_out": true,
+          "text": "I'll get my coat."
+        },
+        "right": {
+          "char": "robot",
+          "pose": "handsup",
+          "text": "I get to break!"
+        }
+      }
+    ]
+  },
   {
     "title": "Margin of error",
     "date": "24 July 2013",
@@ -37,7 +89,18 @@
       {
         "left": {
           "char": "human",
-          "text": "10 years... that's... wow.  But it's just an estimate, right?"
+          "pose": "frowning",
+          "text": "10 years... that's... wow."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "But it's just an estimate, right?"
         },
         "right": {
           "char": "robot",

@@ -68,10 +68,9 @@ function display_comics(comics, how_many, slide)  {
     c += '<br>';
 
     // The 'next' link has a little more magic than the 'previous' link in order to ensure that it will still work when 
-    // the next comic in line hasn't actually been displayed yet.  Calling scrollTo() twice is not a mistake: the first 
-    // call covers us if the target comic is already being displayed, and the second if it isn't.
+    // the next comic in line hasn't actually been displayed yet.
     if (i < comics.length - 1)  {
-      c += '<a onClick="if (!$(\'#'+prev_id+'\').length) { window.location.hash=\'#'+prev_id+
+      c += '<a onClick="if ( ! $(\'#'+prev_id+'\').length ) { window.location.hash=\'#'+prev_id+
            '\'; display_comics(comic_list, 0); } $.scrollTo(\'#'+prev_id+'\', \'fast\', scrollto_settings);" href="#'+
            prev_id+'" title="next comic down">&#x25bd;</a>';
     }
@@ -125,8 +124,9 @@ function display_comics(comics, how_many, slide)  {
     }
 
     // "show JSON" feature
-    c += '<div class="show_json"><a href="javascript:void(0)" onClick="$(this.parentNode).next().slideToggle()">&#x2b10; show/hide JSON</a></div>';
-    c += '<div class="json">'+JSON.stringify(comics[i], null, "  ").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')+'</div>';
+    c += '<div class="show_json"><a href="javascript:void(0)" '+
+         'onClick="$(this.parentNode).next().slideToggle()">&#x2b10; show/hide JSON</a></div><div class="json">'+
+         JSON.stringify(comics[i], null, "  ").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')+'</div>';
 
     // news
     if (comics[i].news)  {
