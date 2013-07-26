@@ -33,6 +33,17 @@ $(document).ready(function () {
 });
 
 
+function scroll_to_comic(selector)  {
+  // If the item we're trying to scroll to doesn't exist on the page, that's probably because it belongs to an earlier
+  // comic that hasn't been displayed yet, so start by loading all comics up to that one.
+  if ( ! $(selector).length ) {
+    window.location.hash = selector;
+    display_comics(comic_list, 0);
+  }
+  $.scrollTo(selector, 'fast', scrollto_settings);
+}
+
+
 function display_comics(comics, how_many, slide)  {
   var i = 0,  // loop watch variable for comics
       j = 0,  // loop watch variable for panels
@@ -62,17 +73,12 @@ function display_comics(comics, how_many, slide)  {
     // prev/next links
     c += '<div class="prevnext">';
     if (i > 0)  {
-      c += '<a onClick="$.scrollTo(\'#'+next_id+'\', \'fast\', scrollto_settings)" href="#'+
-           next_id+'" title="next comic up">&#x25b3;</a>';
+      c += '<a onClick="scroll_to_comic(\'#'+next_id+'\')" href="#'+next_id+'" title="next comic up">&#x25b3;</a>';
     }
     c += '<br>';
 
-    // The 'next' link has a little more magic than the 'previous' link in order to ensure that it will still work when 
-    // the next comic in line hasn't actually been displayed yet.
     if (i < comics.length - 1)  {
-      c += '<a onClick="if ( ! $(\'#'+prev_id+'\').length ) { window.location.hash=\'#'+prev_id+
-           '\'; display_comics(comic_list, 0); } $.scrollTo(\'#'+prev_id+'\', \'fast\', scrollto_settings);" href="#'+
-           prev_id+'" title="next comic down">&#x25bd;</a>';
+      c += '<a onClick="scroll_to_comic(\'#'+prev_id+'\')" href="#'+prev_id+'" title="next comic down">&#x25bd;</a>';
     }
     c += '</div>';
 

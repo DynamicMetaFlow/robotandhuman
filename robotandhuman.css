@@ -7,7 +7,8 @@ BODY {
 
 H1 {
   font-size: 400%;
-  margin: 0 5%;
+  margin: 0 0 0 5%;
+  display: inline-block;
 
   /* this part just makes the alignment look a little better */
   position: relative;
@@ -24,8 +25,12 @@ a:hover {
 
 
 /* the "subscribe" link */
-#feedlink {
-  margin: 0 5%;
+#top_controls {
+  display: inline-block;
+}
+
+#top_controls a {
+  margin-left: 4em;
 }
 
 
