@@ -1,5 +1,42 @@
 [
- {
+  {
+    "title": "Vroom vroom",
+    "date": "27 July 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "R, are you always connected to the internet?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Goodness, no! Ninety percent of what's on there concerns humans doing things I'd rather not think about."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "I do have a large personal database stored in memory, though. Was there something you wanted to look up?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "No, that's okay. I was just wondering how my eBay auction was going. I'm trying to buy a motorcycle."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh, that. I already outbid you by $500."
+        }
+      }
+    ]
+  },
+  {
     "title": "Spreadsheets",
     "date": "25 July 2013",
     "news": "",
