@@ -5,7 +5,7 @@
 var num_comics_shown = 0,  // how many comics are being displayed right now?
     at_a_time = 5,         // how many comics to show initially, and each time "show more comics" is clicked
     comic_list = {},       // all of the content information for the comics -- comes from the JSON file
-    scrollto_settings = { "axis": "y" };  // we call scrollTo a lot; easier to store the settings object in one place
+    scrollto_settings = { "axis": "y" };  // the settings object for any calls to scrollTo
 
 $(document).ready(function () {
   var ajaxobj = new XMLHttpRequest();
@@ -18,7 +18,7 @@ $(document).ready(function () {
         comic_list = JSON.parse(ajaxobj.responseText);
         display_comics(comic_list, at_a_time);
 
-        // Since the comics aren't displayed until after the document is loaded, links from external pages/sources (such 
+        // Since the comics aren't displayed until after the document is loaded, links from external pages/sources (such
         // as feed readers) to anchors within the page won't work without the following code.
         if (window.location.hash)  { $.scrollTo( window.location.hash, 'normal', scrollto_settings ); }
 
@@ -49,7 +49,7 @@ function display_comics(comics, how_many, slide)  {
       j = 0,  // loop watch variable for panels
       target = num_comics_shown + how_many;  // "target" is the number of comics at which we stop showing more
 
-  // If the request was for a comic that's so far down the list that it wouldn't normally be shown by default, 
+  // If the request was for a comic that's so far down the list that it wouldn't normally be shown by default,
   // increase the number of comics we're showing so that the requested one will be the last on the list.
   if ( window.location.hash && target < comics.length + 1 - window.location.hash.substr(2) )  {
     target = comics.length + 1 - window.location.hash.substr(2);
@@ -67,8 +67,9 @@ function display_comics(comics, how_many, slide)  {
         c = '';  // string containing all of the code for this comic
 
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
-    // seem mysterious, see .panel in rhwc.css for (at least partial) enlightenment.
-    c += '<div id="'+id+'" class="episode" style="display:none; width: '+(267*comics[i].panels.length)+'px">';
+    // seem mysterious, see .panel in robotandhuman.css for (at least partial) enlightenment.
+    $('<div id="'+id+'" class="episode" style="display:none; width: '+(267*comics[i].panels.length)+'px"></div>\n')
+      .insertBefore('#more');
 
     // prev/next links
     c += '<div class="prevnext">';
@@ -89,7 +90,7 @@ function display_comics(comics, how_many, slide)  {
     for (j = 0; j < comics[i].panels.length; j++)  {
       // The panel tag and its classes.
       // In the JSON file, set an "extra_classes" property on the whole comic to add that string to each panel's "class"
-      // attribute, or set it on an individual panel to add it to that panel only.  Of course, whatever extra classes you 
+      // attribute, or set it on an individual panel to add it to that panel only.  Of course, whatever extra classes you
       // add here must be defined in your CSS file.
       c += '<div class="panel'+
            (comics[i].extra_classes ? ' '+comics[i].extra_classes : '')+
@@ -139,12 +140,10 @@ function display_comics(comics, how_many, slide)  {
       c += '<div class="news">'+comics[i].news+'</div>';
     }
 
-    c += '</div>\n';  // class="episode"
-
     // Add all of that code inside the newly created episode div.
     // "slide", indicating whether to animate the addition of the new comics, should be set only when display_comics() is
     // called from the "show more comics" link.  Otherwise it will conflict with scrollTo.
-    $(c).insertBefore('#more').slideDown( slide ? 'normal' : 0 );
+    $('#'+id).html(c).slideDown( slide ? 'normal' : 0 );
     num_comics_shown++;
 
     // if there aren't any more comics, hide the "show more comics" link
