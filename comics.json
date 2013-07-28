@@ -1,5 +1,42 @@
 [
   {
+    "title": "Check mate",
+    "date": "28 July 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "So, R, you must be pretty good at chess, right?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "That's an offensive assumption, you know."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "It is? How so?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "You're stereotyping robots. Deep Blue was good at chess, so I must be too, right? But I wasn't built for chess-playing."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Oh... so you mean I might have a chance against you?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I didn't say <i>that</i>."
+        }
+      }
+    ]
+  },
+  {
     "title": "Vroom vroom",
     "date": "27 July 2013",
     "news": "",
