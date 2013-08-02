@@ -1,5 +1,53 @@
 [
   {
+    "title": "Got a virus",
+    "date": "02 Aug 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Heard you got a virus, R!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I did.  But not to worry; my anti-virus software quarantined it right away."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Yeah, but you know how those things are.  You could still be contagious.  I'll keep my distance, just to be safe."
+        },
+        "right": {
+          "char": "robot",
+          "text": "That is a really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, "
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "thought": true,
+          "text": "Uh-oh... did the virus make him freeze up?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, "
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "really, really, really, <strong><em>really</em></strong> dumb thing to say."
+        }
+      }
+    ]
+  },
+  {
     "title": "Check mate",
     "date": "28 July 2013",
     "news": "",
