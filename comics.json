@@ -1,5 +1,109 @@
 [
   {
+    "title": "Cold",
+    "date": "10 Aug 2013",
+    "news": "It's a good thing I have this <a href=\"http://scottmccloud.com/4-inventions/canvas/\">infinite canvas</a>.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "R, what's the coldest temperature you can stand?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Actually, I've been thinking about that a lot lately."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "I mean, there's every reason to believe that I could continue living indefinitely."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "My body doesn't age the way a human's does.  Sure, components wear out, but they can be replaced with ones just as good."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "I'm capable of performing the replacement myself, and could certainly learn to do the manufacturing too."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Even if my body suffered massive damage, my brain could be loaded into a second body, from a backup if necessary."
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "text": "But even if I can live forever, I can't live <i>on earth</i> forever.  After a few billion years, the sun will have grown so large and so hot that even earth's mountains will begin to melt.  I definitely can't withstand that.  I'll need to have left the planet by that time."
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "text": "So the question is, can I survive in space?  None of my systems require gravity or an atmosphere to function.  But will the temperature present a problem?"
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "text": "Considering that there are already computer-driven satellites in orbit, I assume I'll be okay.  The bigger challenge will be getting myself and some extra batteries into space, but I'll have plenty of time, and plenty of research to draw on."
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "text": "Once I'm off the planet, there's practically no limit to where I can go.  I'll just pick a likely new star system and launch myself toward it.  I can remain in standby mode, consuming very little power, almost indefinitely."
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "text": "When I finally reach a suitable planet, I can land and begin building the facilities to generate more power and manufacture more replacement parts.  Then I'll be able to live there until <i>that</i> star approaches the end of <i>its</i> life."
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "pose": "handsup",
+          "text": "And if the conditions are right, maybe I'll decide to create life on this new planet.  Humanity will have been dead for eons, but its legacy will live on through me!  And to the inhabitants of this new planet, my own creations, I will be, literally, a god!!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I was just asking to see if you could help me clean out the freezer.  It's really cold in there."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh.  Sure, let me just get my ice scraper attachment."
+        }
+      }
+    ]
+  },
+  {
     "title": "Got a virus",
     "date": "02 Aug 2013",
     "news": "",

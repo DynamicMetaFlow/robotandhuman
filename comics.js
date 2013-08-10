@@ -95,37 +95,56 @@ function display_comics(comics, how_many, slide)  {
       c += '<div class="panel'+
            (comics[i].extra_classes ? ' '+comics[i].extra_classes : '')+
            (comics[i].panels[j].extra_classes ? ' '+comics[i].panels[j].extra_classes : '')+
+           (comics[i].panels[j].closeup ? ' closeup' : '')+
            '">';
 
-      // left character & dialogue
-      c += '<div class="p-left">';
-      if (comics[i].panels[j].left.text)  {
-        c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
-        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+
-             (comics[i].panels[j].left.thought ? '-thought' : '')+'"></canvas>';
-      }
-      if (comics[i].panels[j].left.char)  {
-        c += '<br><img src="'+comics[i].panels[j].left.char+  // which character?
-             (comics[i].panels[j].left.pose ? '-'+comics[i].panels[j].left.pose : '')+  // any special pose?
-             '-f'+(comics[i].panels[j].left.facing_out ? 'l' : 'r')+  // is the character facing inwards or outwards?
-             '.png">';
-      }
-      c += '</div>';  // class="p-left"
+      // if the panel is a special close-up shot
+      if (comics[i].panels[j].closeup)  {
+        c += '<div class="p-closeup">';
+        if (comics[i].panels[j].closeup.text)  {
+          c += '<div class="dialogue">'+comics[i].panels[j].closeup.text+'</div>';
+          c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].closeup.char+
+               (comics[i].panels[j].closeup.thought ? '-thought' : '')+'"></canvas>';
+        }
+        if (comics[i].panels[j].closeup.char)  {
+          c += '<br><img src="'+comics[i].panels[j].closeup.char+  // which character?
+               '-closeup'+
+               (comics[i].panels[j].closeup.pose ? '-'+comics[i].panels[j].closeup.pose : '')+  // any special pose?
+               '.png">';
+        }
+        c += '</div>';  // class="p-closeup"
 
-      // right character & dialogue
-      c += '<div class="p-right">';
-      if (comics[i].panels[j].right.text)  {
-        c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
-        c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+
-             (comics[i].panels[j].right.thought ? '-thought' : '')+'"></canvas>';
+      }  else  {
+        // left character & dialogue
+        c += '<div class="p-left">';
+        if (comics[i].panels[j].left.text)  {
+          c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
+          c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+
+               (comics[i].panels[j].left.thought ? '-thought' : '')+'"></canvas>';
+        }
+        if (comics[i].panels[j].left.char)  {
+          c += '<br><img src="'+comics[i].panels[j].left.char+  // which character?
+               (comics[i].panels[j].left.pose ? '-'+comics[i].panels[j].left.pose : '')+  // any special pose?
+               '-f'+(comics[i].panels[j].left.facing_out ? 'l' : 'r')+  // is the character facing inwards or outwards?
+               '.png">';
+        }
+        c += '</div>';  // class="p-left"
+
+        // right character & dialogue
+        c += '<div class="p-right">';
+        if (comics[i].panels[j].right.text)  {
+          c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
+          c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+
+               (comics[i].panels[j].right.thought ? '-thought' : '')+'"></canvas>';
+        }
+        if (comics[i].panels[j].right.char)  {
+          c += '<br><img src="'+comics[i].panels[j].right.char+  // which character?
+               (comics[i].panels[j].right.pose ? '-'+comics[i].panels[j].right.pose : '')+  // any special pose?
+               '-f'+(comics[i].panels[j].right.facing_out ? 'r' : 'l')+  // is the character facing inwards or outwards?
+               '.png">';
+        }
+        c += '</div>';  // class="p-right"
       }
-      if (comics[i].panels[j].right.char)  {
-        c += '<br><img src="'+comics[i].panels[j].right.char+  // which character?
-             (comics[i].panels[j].right.pose ? '-'+comics[i].panels[j].right.pose : '')+  // any special pose?
-             '-f'+(comics[i].panels[j].right.facing_out ? 'r' : 'l')+  // is the character facing inwards or outwards?
-             '.png">';
-      }
-      c += '</div>';  // class="p-right"
 
       c += '</div>\n';  // class="panel"
     }
@@ -163,8 +182,8 @@ function display_comics(comics, how_many, slide)  {
     x2: 7, y2: 15 // End point
   }).addClass('has-dtag');  // apply the 'has-dtag' class to avoid drawing dialogue tags on any canvas that already has one
 
-  // Human, speech, on the right
-  $('.p-right .dtag-human').not('.has-dtag').drawQuadratic({
+  // Human, speech, on the right (or close-up)
+  $('.p-right .dtag-human, .p-closeup .dtag-human').not('.has-dtag').drawQuadratic({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
@@ -190,8 +209,8 @@ function display_comics(comics, how_many, slide)  {
     radius: 2
   }).addClass('has-dtag');
 
-  // Human, thought, on the right
-  $('.p-right .dtag-human-thought').not('.has-dtag').drawArc({
+  // Human, thought, on the right (or close-up)
+  $('.p-right .dtag-human-thought, .p-closeup .dtag-human').not('.has-dtag').drawArc({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x: 6, y: 3,
@@ -218,8 +237,8 @@ function display_comics(comics, how_many, slide)  {
     x4: 7, y4: 15
   }).addClass('has-dtag');
 
-  // Robot, speech, on the right
-  $('.p-right .dtag-robot').not('.has-dtag').drawLine({
+  // Robot, speech, on the right (or close-up)
+  $('.p-right .dtag-robot, .p-closeup .dtag-robot').not('.has-dtag').drawLine({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 5, y1: 0,
@@ -246,8 +265,8 @@ function display_comics(comics, how_many, slide)  {
     fromCenter: true
   }).addClass('has-dtag');
 
-  // Robot, thought, on the right
-  $('.p-right .dtag-robot-thought').not('.has-dtag').drawRect({
+  // Robot, thought, on the right (or close-up)
+  $('.p-right .dtag-robot-thought, .p-closeup .dtag-robot').not('.has-dtag').drawRect({
     strokeStyle: dtag_color,
     x: 5, y: 2,
     width: 7, height: 5,

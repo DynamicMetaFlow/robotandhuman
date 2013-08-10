@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require 'tinyatom'    # gem install tinyatom
 require 'json/pure'   # gem install json_pure
 
