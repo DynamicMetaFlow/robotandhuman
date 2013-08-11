@@ -1,7 +1,7 @@
 [
   {
     "title": "Cold",
-    "date": "10 Aug 2013",
+    "date": "11 Aug 2013",
     "news": "It's a good thing I have this <a href=\"http://scottmccloud.com/4-inventions/canvas/\">infinite canvas</a>.",
     "panels": [
       {
@@ -69,7 +69,13 @@
       {
         "closeup": {
           "char": "robot",
-          "text": "Considering that there are already computer-driven satellites in orbit, I assume I'll be okay.  The bigger challenge will be getting myself and some extra batteries into space, but I'll have plenty of time, and plenty of research to draw on."
+          "text": "Considering that there are already computer-driven satellites in orbit, it must be possible, but my systems may need some adaptation.  This is what I need to research."
+        }
+      },
+      {
+        "closeup": {
+          "char": "robot",
+          "text": "What may be a bigger challenge is getting myself and some extra batteries into space, but it's been done before, and I'll have plenty of time to work out my own solution."
         }
       },
       {
