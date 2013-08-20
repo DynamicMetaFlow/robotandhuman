@@ -1,5 +1,73 @@
 [
   {
+    "title": "Mistakes",
+    "date": "19 Aug 2013",
+    "news": "Just want to give a nod to <a href=\"https://jayz.neocities.org/\">Jay Z</a> (not that one, the other one), who is <i>Robot &amp; Human</i>'s #1 fan, by virtue of being its only confirmed fan.  Go <a href=\"http://www.skullwall.com/\">draw a skull</a> for him.",
+    "extra_classes": "taller", 
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "R, if your memory is stored as a bunch of data files, does that mean you can just delete the ones you don't like?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I could.  Some robots do.  But it's frowned upon."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Really?  Why is that?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "People who can't remember their mistakes tend to think they're always brilliant at everything.  They become completely insufferable!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Me, I hold on to my mistakes so I can learn from them.  Like that time when I shook your hand without recalibrating my grip strength."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "And the time I gave you half a dozen scorpions because I didn't know what kind of animals humans like to keep as pets...."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "And when I put salt in your coffee because it looked like sugar... yes, all these mistakes and more are preserved in vivid high-definition video!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Well, it's a good thing you're not insufferable."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Some of them may also have been uploaded to the internet...."
+        }
+      }
+    ]
+  },
+  {
     "title": "Cold",
     "date": "11 Aug 2013",
     "news": "It's a good thing I have this <a href=\"http://scottmccloud.com/4-inventions/canvas/\">infinite canvas</a>.",

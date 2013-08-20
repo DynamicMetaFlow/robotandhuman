@@ -179,6 +179,10 @@ a:hover {
   margin-top: 5px;
 }
 
+.news I, .news EM {
+  font-style: normal;  /* kind of like a double negative */
+}
+
 
 /* the "more" element contains the "show more comics" link and also marks the place where the comics end */
 #more {
