@@ -1,7 +1,47 @@
 [
   {
+    "title": "Colon parenthesis",
+    "date": "03 September 2013",
+    "news": "No offense intended, <a href=\"http://www.cs.cmu.edu/~sef/\">Scott Fahlman</a>.  I like emoticons quite a lot, as compared to having my tone misinterpreted.",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Okay, R, you may be smarter and stronger than us humans, but the trade-off is that you'll never be able to feel emotions.  I'll bet you're sorry about that!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Definitely not! According to my cultural and medical databases, emotions are the leading cause of humans doing dangerous or obnoxious things they know they shouldn't."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "What's more, emotions are directly responsible for the creation of emoti<i>cons</i>, and I think we can agree about how stupid <i>they</i> are."
+        }
+      },
+      {
+        "extra_classes": "clockwise_bubbles padded_bubbles",
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": ":("
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      }
+    ]
+  },
+  {
     "title": "Mistakes",
-    "date": "19 Aug 2013",
+    "date": "19 August 2013",
     "news": "Just want to give a nod to <a href=\"https://jayz.neocities.org/\">Jay Z</a> (not that one, the other one), who is <i>Robot &amp; Human</i>'s #1 fan, by virtue of being its only confirmed fan.  Go <a href=\"http://www.skullwall.com/\">draw a skull</a> for him.",
     "extra_classes": "taller", 
     "panels": [
@@ -69,7 +109,7 @@
   },
   {
     "title": "Cold",
-    "date": "11 Aug 2013",
+    "date": "11 August 2013",
     "news": "It's a good thing I have this <a href=\"http://scottmccloud.com/4-inventions/canvas/\">infinite canvas</a>.",
     "panels": [
       {
@@ -179,7 +219,7 @@
   },
   {
     "title": "Got a virus",
-    "date": "02 Aug 2013",
+    "date": "02 August 2013",
     "news": "",
     "panels": [
       {
