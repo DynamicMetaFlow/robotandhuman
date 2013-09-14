@@ -5,6 +5,7 @@ require 'json/pure'   # gem install json_pure
 
 base_url = 'http://robotandhuman.neocities.org/'
 max_entries = 20   # only include this many entries in the feed
+feed_filename = 'atom.txt'
 
 # Read in the JSON file
 cfile = File.open('comics.json', 'r')
@@ -57,11 +58,13 @@ end
 
 # Output the feed
 #puts feed.make(:indent => 2)  # for debugging
-ffile = File.new('atom.txt', 'w')
+ffile = File.new(feed_filename, 'w')
 
 # Start with a newline to get around NeoCities' dislike for Atom files.  Unfortunately this isn't legal in XML.  Some
-# feed readers might not care, but just in case, I usually fix this by using NeoCities' visual editor to remove the
+# feed readers might not care, but just in case, I usually fix this by using NeoCities' text editor to remove the
 # newline after uploading the file.
 ffile.write( "\n" + feed.make(:indent => 2) )
 
 ffile.close
+
+puts "Finished writing #{feed_filename}."

@@ -1,4 +1,42 @@
 [
+ {
+    "title": "Friday the 13th",
+    "date": "13 September 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Better be careful today, R.  It's Friday the 13th!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Huh?  What does the date have to do with being careful?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Well, you know&mdash;Friday the 13th is supposed to be an unlucky day.  All sorts of evil stuff might happen!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "That's a preposterous human superstition."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "pose": "pensive",
+          "text": "Although it <i>would</i> explain why my random number generator has been returning '666' all day...."
+        }
+      }
+    ]
+  },
   {
     "title": "Colon parenthesis",
     "date": "03 September 2013",
