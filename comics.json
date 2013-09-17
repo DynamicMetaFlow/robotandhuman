@@ -1,5 +1,53 @@
 [
  {
+    "title": "Workaholic",
+    "date": "16 September 2013",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": "I finished helping Dr. A reorganize her specimens. Anything you need a hand with here?"
+        },
+        "right": {
+          "char": "human",
+          "text": "Do you know you're the most incredible workaholic I've ever met? Why don't you just take a break?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "We robots <i>exist</i> to work. My processor is running constantly; if it's not calculating something, those cycles are just wasted."
+        },
+        "right": {
+          "char": "human",
+          "text": "See, that's what worries me. You do trillions of operations per second and you're <i>still</i> not satisfied. If I get three good things done, I consider that a productive day. "
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Once robots become self-sufficient, why would they continue to tolerate such inefficient resource hogs as human beings?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "You're worrying too much. I mean, your cat is pretty unproductive, but you don't hold that against it, do you?"
+        },
+        "right": {
+          "char": "human",
+          "text": "That analogy is not as reassuring as you seem to think."
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th",
     "date": "13 September 2013",
     "news": "",
