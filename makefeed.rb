@@ -23,10 +23,10 @@ feed = TinyAtom::Feed.new(
 
 
 # Add each comic as a feed entry
-id = 1
+id = 1 + (comics.length - max_entries)  # offset the ID appropriately
 alltimes = Array.new
 
-comics.reverse.each do |c|
+comics[0...max_entries].reverse.each do |c|
 
   # This relies on some assumptions about the way I usually write times in the JSON file -- maybe
   # I should be adhering to a strict, reliably parsable format, but I wanted more freedom than that.
@@ -49,9 +49,8 @@ comics.reverse.each do |c|
   #    add_entry(id, title,      updated, link,                 options = {})
   feed.add_entry(id, c['title'], t,       "#{base_url}#e#{id}")
 
-  # Increment ID and check if we've reached max_entries
+  # Increment ID
   id = id + 1
-  if id + 1 > max_entries then break end
 
 end
 
