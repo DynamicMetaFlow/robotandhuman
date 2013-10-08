@@ -1,5 +1,53 @@
 [
  {
+    "title": "Robot sports",
+    "date": "07 October 2013",
+    "extra_classes": "taller",
+    "news": "Other popular robot sports: figure estimating, 400-meter triangulation, Tae Kwon DOS, binathlon.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Do robots play any sports?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Absolutely! Why, at last year's robot convention, I won the silver medal in prime number golf. I'm also pretty good at multiplication table tennis."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Uh… any sports that aren't about math?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "All sports are about math. You humans just don't realize it. Geometry, mostly. Though physics knowledge is pretty important too."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "In fact, most sporting matches would be foregone conclusions, if only humans were as good at math as robots are."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "So you're saying that Michael Jordan, for example, won all those MVP awards because he was the best mathematician in basketball?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I'd be more likely to say \"least bad mathema&shy;tician\"... though I'd also accept \"most robot-like\"."
+        }
+      }
+    ]
+  },
+  {
     "title": "Workaholic",
     "date": "16 September 2013",
     "news": "",
