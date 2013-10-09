@@ -28,16 +28,6 @@
       {
         "left": {
           "char": "human",
-          "text": ""
-        },
-        "right": {
-          "char": "robot",
-          "text": "In fact, most sporting matches would be foregone conclusions, if only humans were as good at math as robots are."
-        }
-      },
-      {
-        "left": {
-          "char": "human",
           "text": "So you're saying that Michael Jordan, for example, won all those MVP awards because he was the best mathematician in basketball?"
         },
         "right": {
