@@ -1,5 +1,42 @@
 [
- {
+  {
+    "title": "Immortality",
+    "date": "30 October 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "I've seen a lot of articles lately about biologists making important discoveries related to human immortality."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Me too.  The science is impressive, but I can't see it catching on."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Why not? I'd do it in a heartbeat. After all, the first instinct of any life form is to preserve itself."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh, sure&mdash;everybody thinks immortality is a great idea for <i>themselves</i>."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Getting your <i>neighbors</i> to put up with you for eternity, now <i>that's</i> the difficult sell."
+        }
+      }
+    ]
+  },
+  {
     "title": "Robot sports",
     "date": "07 October 2013",
     "extra_classes": "taller",
