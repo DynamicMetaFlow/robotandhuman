@@ -1,5 +1,43 @@
 [
   {
+    "title": "Storage space",
+    "date": "09 December 2013",
+    "news": "The <a href=\"http://www.wolframalpha.com/input/?i=storage+capacity+of+human+brain\">two petabytes figure</a> comes from Wolfram|Alpha, but I don't know how they know.",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": "...I'm saying it's inevitable.  Once every human can afford to buy a robot chassis, I don't know why they <i>wouldn't</i> upload their conscious&shy;ness..."
+        },
+        "right": {
+          "char": "human",
+          "text": "Storage space, for one thing.  How are you going to cram all the complexity of a human brain into a hard drive?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "What, two petabytes?  A mere grain of data, rattling around in the vast silo of a robot's brain."
+        },
+        "right": {
+          "char": "human",
+          "text": "Wait... so you're saying you have enough space to store several human conscious&shy;nesses?  Have you considered developing multiple personalities?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "How do you know I haven't already?"
+        },
+        "right": {
+          "char": "human",
+          "text": "Well, if you have, can you make some that <i>don't</i> like playing practical jokes on me?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Immortality",
     "date": "30 October 2013",
     "news": "",
