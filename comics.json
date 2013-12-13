@@ -1,4 +1,42 @@
 [
+ {
+    "title": "Friday the 13th, part 2",
+    "date": "13 December 2013",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "So, R, it's Friday the 13th again. Did you ever figure out what was causing the problems with your random number generator last time?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "<b>YES. I ASKED MY PROGRAM&shy;MERS AND THEY SAID THEY IT WAS A PRACTICAL JOKE THEY'D WRITTEN INTO MY CODE.</b>"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "...and they've written a different practical joke to take effect on every Friday the 13th?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "<b>HOW DID YOU GUESS?</b>"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "...and today's is that you can't control the volume of your voice?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "<b>I'M GOING TO KILL THEM!</b>"
+        }
+      }
+    ]
+  },
   {
     "title": "Storage space",
     "date": "09 December 2013",
