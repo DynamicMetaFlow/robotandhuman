@@ -169,6 +169,9 @@ function display_comics(comics, how_many, slide)  {
     if (num_comics_shown >= comics.length)  { $('#more').hide(); }
   }
 
+  // Hyphenate the dialogue
+  Hyphenator.run();
+
   // Add the dialogue tags
   var dtag_color = "#999",
       dtag_thickness = 1;

@@ -12,7 +12,7 @@
         },
         "right": {
           "char": "robot",
-          "text": "<b>YES. I ASKED MY PROGRAM&shy;MERS AND THEY SAID THEY IT WAS A PRACTICAL JOKE THEY'D WRITTEN INTO MY CODE.</b>"
+          "text": "<b>YES. I ASKED MY PROGRAMMERS AND THEY SAID THEY IT WAS A PRACTICAL JOKE THEY'D WRITTEN INTO MY CODE.</b>"
         }
       },
       {
@@ -46,7 +46,7 @@
       {
         "left": {
           "char": "robot",
-          "text": "...I'm saying it's inevitable.  Once every human can afford to buy a robot chassis, I don't know why they <i>wouldn't</i> upload their conscious&shy;ness..."
+          "text": "...I'm saying it's inevitable.  Once every human can afford to buy a robot chassis, I don't know why they <i>wouldn't</i> upload their consciousness..."
         },
         "right": {
           "char": "human",
@@ -60,7 +60,7 @@
         },
         "right": {
           "char": "human",
-          "text": "Wait... so you're saying you have enough space to store several human conscious&shy;nesses?  Have you considered developing multiple personalities?"
+          "text": "Wait... so you're saying you have enough space to store several human consciousnesses?  Have you considered developing multiple personalities?"
         }
       },
       {
@@ -145,7 +145,7 @@
         },
         "right": {
           "char": "robot",
-          "text": "I'd be more likely to say \"least bad mathema&shy;tician\"... though I'd also accept \"most robot-like\"."
+          "text": "I'd be more likely to say \"least bad mathematician\"... though I'd also accept \"most robot-like\"."
         }
       }
     ]
