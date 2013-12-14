@@ -210,13 +210,6 @@ a:hover {
 }
 
 
-/* the loading image */
-#loading {
-  display: none;
-  margin: 4em 5%;
-}
-
-
 /* all that text at the end */
 #blathering {
   margin: 3.5em 10% 0 5%;

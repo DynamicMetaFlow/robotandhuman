@@ -50,7 +50,8 @@ function display_comics(comics, how_many, slide)  {
       target = num_comics_shown + how_many;  // "target" is the number of comics at which we stop showing more
 
   // show the loading image
-  $("#loading").show();
+  $("#more").data( "oldhtml", $("#more").html() );
+  $("#more").html("Loading some comics... <img src=\"loading.gif\" alt=\"\" style=\"width:43px; height:11px;\">");
 
   // If the request was for a comic that's so far down the list that it wouldn't normally be shown by default,
   // increase the number of comics we're showing so that the requested one will be the last on the list.
@@ -72,7 +73,7 @@ function display_comics(comics, how_many, slide)  {
     // We set the width of each episode div individually, according to how many panels it has.  If these numbers
     // seem mysterious, see .panel in robotandhuman.css for (at least partial) enlightenment.
     $('<div id="'+id+'" class="episode" style="display:none; width: '+(267*comics[i].panels.length)+'px"></div>\n')
-      .insertBefore('#loading');
+      .insertBefore('#more');
 
     // prev/next links
     c += '<div class="prevnext">';
@@ -289,7 +290,7 @@ function display_comics(comics, how_many, slide)  {
     fromCenter: true
   }).addClass('has-dtag');
 
-  // show the loading image
-  $("#loading").hide();
+  // replace the loading image with the "show more" link
+  $("#more").html( $("#more").data("oldhtml") );
 
 }
