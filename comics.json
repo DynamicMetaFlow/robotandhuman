@@ -1,5 +1,42 @@
 [
- {
+  {
+    "title": "Holidays",
+    "date": "25 December 2013",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": "I don't understand holidays. Why do humans reserve a single day for certain beneficial activities?"
+        },
+        "right": {
+          "char": "human",
+          "text": "Are robots so different? You schedule important tasks and complete them at regular intervals."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "So holidays are like a cron job, prompting you to be thankful, or generous, once a year?"
+        },
+        "right": {
+          "char": "human",
+          "text": "Pretty much."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Have you considered increasing that to once a day?"
+        },
+        "right": {
+          "char": "human",
+          "text": "I don't know; it's pretty resource-intensive."
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th, part 2",
     "date": "13 December 2013",
     "news": "",
