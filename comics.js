@@ -49,6 +49,10 @@ function display_comics(comics, how_many, slide)  {
       j = 0,  // loop watch variable for panels
       target = num_comics_shown + how_many;  // "target" is the number of comics at which we stop showing more
 
+  // show the loading image
+  $("#more").data( "oldhtml", $("#more").html() );
+  $("#more").html("Loading some comics... <img src=\"loading.gif\" alt=\"\" style=\"width:43px; height:11px;\">");
+
   // If the request was for a comic that's so far down the list that it wouldn't normally be shown by default,
   // increase the number of comics we're showing so that the requested one will be the last on the list.
   if ( window.location.hash && target < comics.length + 1 - window.location.hash.substr(2) )  {
@@ -285,4 +289,8 @@ function display_comics(comics, how_many, slide)  {
     width: 3, height: 3,
     fromCenter: true
   }).addClass('has-dtag');
+
+  // replace the loading image with the "show more" link
+  $("#more").html( $("#more").data("oldhtml") );
+
 }
