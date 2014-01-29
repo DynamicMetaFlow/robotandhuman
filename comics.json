@@ -1,5 +1,43 @@
 [
   {
+    "title": "Artificial intelligence",
+    "date": "28 January 2014",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "On <i>Star Trek</i>, any computer program left alone for long enough&mdash;like the holographic doctor on <i>Voyager</i>&mdash;inevitably develops self-awareness and a personality."
+        },
+        "right": {
+          "char": "robot",
+          "text": "It makes sense.  Your own brain develops and improves itself naturally over time; why wouldn't an electronic one?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I wanted to test the theory.  So I loaded up a copy of Windows Solitaire and I've kept it running for eight months so far."
+        },
+        "right": {
+          "char": "robot",
+          "text": "A capital experiment!  Any results yet?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Yes, it's begun flooding internet message boards with captioned pictures of cats."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, your children naturally imitate what they see you do…."
+        }
+      }
+    ]
+  },
+  {
     "title": "Holidays",
     "date": "25 December 2013",
     "news": "",
