@@ -1,5 +1,100 @@
 [
   {
+    "title": "Naming conventions",
+    "date": "03 March 2014",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Hey R, I need your full name for a form I'm filling out.  What is it again?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "It's RXL-07a0-25001."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Jeez, no wonder I couldn't remember it.  Who came up with that?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "It's a straightforward yet unique code containing data about my origin and specialization.  Why, how do you choose names for newborn humans?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Well, it varies according to cultural factors. Used to be you'd name them after an honored ancestor, or a religious figure you hoped they'd emulate."
+        },
+        "right": {
+          "char": "robot",
+          "text": "And nowadays?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "If it's a girl, Irish surname or a part of New York City.  For a boy, anything that rhymes with \"laden\" will do."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      }
+    ]
+  },
+  {
+    "title": "Music",
+    "date": "23 February 2014",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Do robots listen to music?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Of course! The best way to get a robot to appreciate otherwise uninteresting stimuli is to arrange them according to mathematical principles."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Gee, when you put it like that...."
+        },
+        "right": {
+          "char": "robot",
+          "text": "It's the same criterion humans use to distinguish music from noise.  You just don't think of it that way."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "In fact, many robots have used these principles to <i>compose</i> music that humans find quite pleasing."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "You know Daft Punk aren't robots, right?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I'm referring to machine improvisation projects... wait, are you sure about Daft Punk?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Artificial intelligence",
     "date": "28 January 2014",
     "news": "",
@@ -32,7 +127,7 @@
         },
         "right": {
           "char": "robot",
-          "text": "Well, your children naturally imitate what they see you do…."
+          "text": "Well, your children naturally imitate what they see you do...."
         }
       }
     ]
@@ -206,7 +301,7 @@
       {
         "left": {
           "char": "human",
-          "text": "Uh… any sports that aren't about math?"
+          "text": "Uh... any sports that aren't about math?"
         },
         "right": {
           "char": "robot",
