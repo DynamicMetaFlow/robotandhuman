@@ -122,8 +122,10 @@ function display_comics(comics, how_many, slide)  {
         // left character & dialogue
         c += '<div class="p-left">';
         if (comics[i].panels[j].left.text)  {
-          c += '<div class="dialogue">'+comics[i].panels[j].left.text+'</div>';
-          c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+
+          c += '<div class="dialogue'+
+               (comics[i].panels[j].left.extra_classes ? ' '+comics[i].panels[j].left.extra_classes : '')+
+               '">'+comics[i].panels[j].left.text+'</div>'+
+               '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+
                (comics[i].panels[j].left.thought ? '-thought' : '')+'"></canvas>';
         }
         if (comics[i].panels[j].left.char)  {
@@ -137,8 +139,10 @@ function display_comics(comics, how_many, slide)  {
         // right character & dialogue
         c += '<div class="p-right">';
         if (comics[i].panels[j].right.text)  {
-          c += '<div class="dialogue">'+comics[i].panels[j].right.text+'</div>';
-          c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+
+          c += '<div class="dialogue'+
+               (comics[i].panels[j].right.extra_classes ? ' '+comics[i].panels[j].right.extra_classes : '')+
+               '">'+comics[i].panels[j].right.text+'</div>'+
+               '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+
                (comics[i].panels[j].right.thought ? '-thought' : '')+'"></canvas>';
         }
         if (comics[i].panels[j].right.char)  {

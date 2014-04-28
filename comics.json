@@ -1,5 +1,111 @@
 [
   {
+    "title": "Sandwich, part 2",
+    "date": "27 April 2014",
+    "news": "The Sagan thing is a reference to a <a href=\"http://en.wikiquote.org/wiki/Carl_Sagan#Cosmos_.281980.29\">quote from <i>Cosmos</i></a> about apple pie.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "I think the fact that you won't follow my order to make a sandwich indicates a fault in your programming."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh, worry not!  I'm processing your sandwich task as we speak."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Sure doesn't look like it."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, as Carl Sagan would be sure to point out: if you wish to make a sandwich, you must first invent the universe."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Uh...."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Unfortunately, I'm unable to begin this step because there is an existing universe taking up all of the available space."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "However, I am diligently polling every 14 milliseconds to check whether the universe still exists."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "As soon as it does <i>not</i>, I can begin work on your sandwich."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Is this how robots say \"When Hell freezes over\"?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "pensive",
+          "text": "There's a thought... I suppose I <i>could</i> make your sandwich in Hell, as long as you like the flavor of brimstone."
+        }
+      }
+    ]
+  },
+  {
+    "title": "Sandwich, part 1",
+    "date": "27 April 2014",
+    "news": "If you like comics about abusing technology to obtain sandwiches, be sure to check out <a href=\"http://xkcd.com/149/\">xkcd #149</a>.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "People say, \"computers always do exactly what you tell them to.\""
+        },
+        "right": {
+          "char": "robot",
+          "text": "That's true.  Computers are literal to a fault."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "And robots are really just powerful computers, right?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I don't like where this is going...."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "R, make me a sandwich!"
+        },
+        "right": {
+          "char": "robot",
+          "extra_classes": "mechanical_voice",
+          "text": "Syntax error: implied preposition is ambiguous"
+        }
+      }
+    ]
+  },
+  {
     "title": "Naming conventions",
     "date": "03 March 2014",
     "news": "",
@@ -433,9 +539,9 @@
         }
       },
       {
-        "extra_classes": "clockwise_bubbles padded_bubbles",
         "left": {
           "char": "human",
+          "extra_classes": "clockwise_bubble padded_bubble",
           "pose": "frowning",
           "text": ":("
         },
@@ -1100,6 +1206,7 @@
         },
         "right": {
           "char": "robot",
+          "extra_classes": "mechanical_voice",
           "text": "RobOS v11.20.3.<wbr>1377891 64 kb free"
         }
       },

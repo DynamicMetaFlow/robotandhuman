@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
 BODY {
   font-family: Verdana, sans-serif;
   font-size: 13px;
@@ -12,7 +14,7 @@ H1 {
 
   /* this part just makes the alignment look a little better */
   position: relative;
-  left: -5px;
+  left: -4px;
 }
 
 a:link {
@@ -110,7 +112,7 @@ a:hover {
 }
 
 
-/* "extra classes" for panels */
+/* "extra classes" for panels and dialogue */
 .dashed {
   border-style: dashed;
 }
@@ -120,7 +122,7 @@ a:hover {
   height: 350px;
 }
 
-.clockwise_bubbles .dialogue {
+.clockwise_bubble {
   -webkit-transform: rotate(90deg);
   -moz-transform:    rotate(90deg);
   -ms-transform:     rotate(90deg);
@@ -128,8 +130,13 @@ a:hover {
   transform:         rotate(90deg);
 }
 
-.padded_bubbles .dialogue {
+DIV.padded_bubble {
   padding: 1em;
+}
+
+.mechanical_voice {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 105%;  /* it looks kind of jagged without this */
 }
 
 
