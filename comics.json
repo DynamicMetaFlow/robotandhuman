@@ -1,5 +1,83 @@
 [
   {
+    "title": "One of the only",
+    "date": "29 May 2014",
+    "news": "This is <i>one of my only</i> pet peeves (another set that's much larger than that wording makes it sound).  The phrase you probably want to use instead is \"one of the few\".",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "pose": "standingonhead",
+          "text": "Ta-da!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Wow.  What an impressive yet useless skill."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Thanks.  You know, I'm one of the only people in the world who can do that."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Of course you are."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Hmm... you're not usually so quick to extol my virtues."
+        },
+        "right": {
+          "char": "robot",
+          "text": "I'm not extolling anything.  It's just that \"one of the only\" is a meaningless phrase."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "If just one other person in the world could do it, or if everybody could do it save one person, your claim would be equally true."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "You're also \"one of the only\" blue-eyed people in the world, but that's still a set of hundreds of millions."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Wow. You must be <i>one of the only</i> robots who cares so much about word choices."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Indeed.  And may I say, you're <i>one of the only</i> humans whom I find so persistently exasperating."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I bet that's also a pretty long list."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Yes, but you have a special place on it."
+        }
+      }
+    ]
+  },
+  {
     "title": "Sandwich, part 2",
     "date": "27 April 2014",
     "news": "The Sagan thing is a reference to a <a href=\"http://en.wikiquote.org/wiki/Carl_Sagan#Cosmos_.281980.29\">quote from <i>Cosmos</i></a> about apple pie.",
