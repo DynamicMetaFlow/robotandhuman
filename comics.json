@@ -1,5 +1,45 @@
 [
   {
+    "title": "Friday the 13th, part 3",
+    "date": "13 June 2014",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "It's Friday the 13th again, R! What practical joke have your programmers inflicted on you today?"
+        },
+        "right": {
+          "char": "robot",
+          "extra_classes": "upside-down",
+          "text": "They made me talk upside-down!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "That doesn't make sense."
+        },
+        "right": {
+          "char": "robot",
+          "extra_classes": "upside-down",
+          "text": "Do you mean that you didn't understand what I said, or that the idea of talking upside-down is meaningless?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Both."
+        },
+        "right": {
+          "char": "robot",
+          "extra_classes": "upside-down",
+          "text": "..."
+        }
+      }
+    ]
+  },
+  {
     "title": "One of the only",
     "date": "29 May 2014",
     "news": "This is <i>one of my only</i> pet peeves (another set that's much larger than that wording makes it sound).  The phrase you probably want to use instead is \"one of the few\".",
