@@ -1,5 +1,53 @@
 [
   {
+    "title": "The exact optimal number",
+    "date": "28 July 2014",
+    "news": "A better question would be if there are any sites that <i>aren't</i> about that.",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "You told me once that you don't spend much time on the internet because of all the pornography."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, yes, but not just the pornography. Even the news sites are full of terrible things&mdash;murders, massacres...."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "That stuff is as hard to watch as porn?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "They're both offensive, in different ways."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "So you don't want to see humans making more humans, but you don't want to see them making <i>fewer</i> humans either. Do we currently have the exact optimal number of humans?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, no&mdash;I mean, I think overpopulation needs to be curbed, but not by violent means."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "So ideally you'd like to see humans sitting quietly and waiting to die."
+        },
+        "right": {
+          "char": "robot",
+          "text": "...are there sites about that?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th, part 3",
     "date": "13 June 2014",
     "news": "",
