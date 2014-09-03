@@ -1,5 +1,47 @@
 [
   {
+    "title": "Sandwich, part 3",
+    "date": "03 September 2014",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Hey, R! Any progress on making me a sandwich?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "holdingbox",
+          "text": "I anticipated that you would ask about that.  Here you go."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "pose": "holdingbox",
+          "extra_classes": "mechanical_voice",
+          "text": "Attachment: BLT on rye (320 calories)."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "It's in a <i>Dukes of Hazzard</i> lunch box!"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "holdingbox",
+          "text": "There are a lot of things I anticipate about you."
+        }
+      }
+    ]
+  },
+  {
     "title": "The exact optimal number",
     "date": "28 July 2014",
     "news": "A better question would be if there are any sites that <i>aren't</i> about that.",
