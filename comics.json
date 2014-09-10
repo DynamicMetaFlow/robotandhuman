@@ -1,5 +1,63 @@
 [
   {
+    "title": "Sportsbotship",
+    "date": "09 September 2014",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Since I know you robots only like sports that are about numbers, I've come up with a new one."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I pick a number between 1 and 100, and you try to guess it. Then you do the same, and I try to guess it.  Whoever's guess was closest wins."
+        },
+        "right": {
+          "char": "robot",
+          "text": "That's not a sport.  It's completely random.  You might as well play \"War\", or bet on coin flips."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "You just don't want to play because you're afraid you'll lose."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Fine.  Seventy-three."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "What&mdash;I didn't say to start yet!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "But I'm right, aren't I?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Well... yes!  How did you do that?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Just because it's not a sport doesn't mean I'm not better at it than you."
+        }
+      }
+    ]
+  },
+  {
     "title": "Sandwich, part 3",
     "date": "03 September 2014",
     "news": "",
