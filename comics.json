@@ -1,5 +1,63 @@
 [
   {
+    "title": "Social change",
+    "date": "16 September 2014",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "I believe I've devised the ultimate algorithm for how humans should deal with social change."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "This ought to be good."
+        },
+        "right": {
+          "char": "robot",
+          "text": "It's simple: whenever you don't know where to stand on a controversial social issue, take the side that lets you tolerate other humans, rather than despise them."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "You'll probably be right, and even if you're wrong, you'll spend less time hating people, avoiding the deleterious effects that has on mental and physical health."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "You talk about how much you despise humans all the time!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well yeah, but that's because they're inferior to me."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "This algorithm was designed for <i>you</i>."
+        }
+      }
+    ]
+  },
+  {
     "title": "Sportsbotship",
     "date": "09 September 2014",
     "news": "",
