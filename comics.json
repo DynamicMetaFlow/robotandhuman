@@ -1,4 +1,41 @@
 [
+ {
+    "title": "Intelligent life",
+    "date": "26 October 2014",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Do you think there could be intelligent life on other planets?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Sure! Aliens could create robots just the same as humans did."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "What I <i>meant</i> was, do you think that aliens even exist?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "From the perspective of almost every planet in the universe, <i>you're</i> an alien, so yes."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Sure, but is there anyone <i>on</i> those other planets who could care?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Good question.  I'll ask my friends on Gliese 876 d whether they care about you."
+        }
+      }
+    ]
+  },
   {
     "title": "Social change",
     "date": "16 September 2014",
