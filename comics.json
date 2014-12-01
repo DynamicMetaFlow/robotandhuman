@@ -1,5 +1,72 @@
 [
- {
+  {
+    "title": "When I grow up",
+    "date": "30 November 2014",
+    "news": "I haven't been explicit about it before now, but in my mind, R and H work in the same research lab.  It's not clear whether R is an employee or an experiment&mdash;probably a bit of both.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Is this what you always imagined you'd be doing at this age?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Talking with robots? Not hardly."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Not this exact moment. I mean this job. Did you always know you'd be a lab assistant?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Well, I don't think anybody dreams of being an <i>assistant</i> when they grow up. But yeah, I wanted to be a scientist."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Advancing human knowledge... maybe getting a discovery named after me...."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Adults told me that I was really smart and was sure to succeed at it. But it turns out that just being smart isn't enough."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Wow, really?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Yeah... you have to work hard and have the discipline to&mdash;"
+        },
+        "right": {
+          "char": "robot",
+          "text": "No, I mean, people really told you that you were smart?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Intelligent life",
     "date": "26 October 2014",
     "news": "",
