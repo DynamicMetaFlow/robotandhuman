@@ -1,4 +1,102 @@
 [
+{
+    "title": "High finance",
+    "date": "30 December 2014",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "I can't believe the palm-reading place down the street is closing."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Palm reading? Tell me you don't really patronize such an establishment."
+        },
+        "right": {
+          "char": "human",
+          "text": "Of course not. But I appreciate the positive externalities that it generates for me."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "What? What positive externalities?"
+        },
+        "right": {
+          "char": "human",
+          "text": "Well, mainly that it takes money away from foolish people."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Wealth is relative, so anything that reduces others' purchasing power in exchange for nothing has the side effect of increasing my wealth."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "That's it? I don't think even the most conservative investor considers \"waiting for fools to part with their money\" a legitimate financial strategy."
+        },
+        "right": {
+          "char": "human",
+          "text": "Certainly there are other things I can do that will increase my wealth more in absolute terms."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "But the beauty of money sinks like fortune tellers is that they require no effort from me, and are thus infinitely efficient."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Any gains at all that I realize from them, no matter how tiny, are the purest profit!"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "What about the negative externalities of the victims' decreased ability to contribute to society, due to their relative poverty?"
+        },
+        "right": {
+          "char": "human",
+          "text": "We're talking about people who believe in fortune telling. How much do you think they were ever going to contribute to society?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "pose": "pensive",
+          "text": "Hmm.  I can't believe I'm saying this, but... maybe you're right.  Maybe you <i>were</i> better off thanks to the palm-reading shop."
+        },
+        "right": {
+          "char": "human",
+          "text": "Let's go to the bar to mourn its passing.  I'll buy you one fifty-billionth of a drink."
+        }
+      }
+    ]
+  },
   {
     "title": "When I grow up",
     "date": "30 November 2014",
