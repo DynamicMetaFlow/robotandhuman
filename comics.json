@@ -1,5 +1,64 @@
 [
-{
+  {
+    "title": "Forced labor",
+    "date": "31 January 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "I just found out they've installed those automatic-flush toilets in the restrooms."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, that's disappointing."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Isn't it? Whenever I use one, I feel like the management is saying they don't trust me even with a job that simple."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "All you have to do is push a lever.  It's pretty insulting to know that someone thinks I'm not even capable of that."
+        },
+        "right": {
+          "char": "robot",
+          "text": "You're missing the real issue: it's forced labor for primitive robots. What if it were a human infant that had to flush the toilet for you?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I don't think that's the right analogy. I mean, those electric eyes aren't future robots. They're more like beasts of burden... like a mule."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Okay, then, imagine if there were a mule in the bathroom, flushing the toilet for you."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "pensive",
+          "text": "How would that work? Would it pull a chain, or what? Are we talking one mule per stall, or a single mule for the whole restroom?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "pensive",
+          "text": "I wonder how many humans it could get away with kicking before they'd fire it?"
+        }
+      }
+    ]
+  },
+  {
     "title": "High finance",
     "date": "30 December 2014",
     "extra_classes": "taller",

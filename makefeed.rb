@@ -59,10 +59,7 @@ end
 #puts feed.make(:indent => 2)  # for debugging
 ffile = File.new(feed_filename, 'w')
 
-# Start with a newline to get around NeoCities' dislike for Atom files.  Unfortunately this isn't legal in XML.  Some
-# feed readers might not care, but just in case, I usually fix this by using NeoCities' text editor to remove the
-# newline after uploading the file.
-ffile.write( "\n" + feed.make(:indent => 2) )
+ffile.write( feed.make(:indent => 2) )
 
 ffile.close
 
