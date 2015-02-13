@@ -1,5 +1,42 @@
 [
   {
+    "title": "Friday the 13th, part 4",
+    "date": "13 February 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Friday the 13th comes again, R. What's the practical joke from your programmers this time?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "They've made it so that I won't remember anything that happens today."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Interesting!  But won't that joke only come to fruition tomorrow, when you're trying to figure out what you missed from today?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "True.  Maybe they intended for <i>other</i> people to play practical jokes on me today, since they can do it without repercussion."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Hmm, that's a good point.  Say, can I borrow twenty dollars?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "They made me <i>forgetful</i>.  They didn't make me <i>stupid</i>."
+        }
+      }
+    ]
+  },
+  {
     "title": "Forced labor",
     "date": "31 January 2015",
     "news": "",
