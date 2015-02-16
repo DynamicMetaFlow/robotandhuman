@@ -111,7 +111,7 @@ function display_comics(comics, how_many, slide)  {
                (comics[i].panels[j].closeup.thought ? '-thought' : '')+'"></canvas>';
         }
         if (comics[i].panels[j].closeup.char)  {
-          c += '<br><img src="images/'+comics[i].panels[j].closeup.char+  // which character?
+          c += '<br><img src="characters/'+comics[i].panels[j].closeup.char+  // which character?
                '-closeup'+
                (comics[i].panels[j].closeup.pose ? '-'+comics[i].panels[j].closeup.pose : '')+  // any special pose?
                '.png">';
@@ -129,7 +129,7 @@ function display_comics(comics, how_many, slide)  {
                (comics[i].panels[j].left.thought ? '-thought' : '')+'"></canvas>';
         }
         if (comics[i].panels[j].left.char)  {
-          c += '<br><img src="images/'+comics[i].panels[j].left.char+  // which character?
+          c += '<br><img src="characters/'+comics[i].panels[j].left.char+  // which character?
                (comics[i].panels[j].left.pose ? '-'+comics[i].panels[j].left.pose : '')+  // any special pose?
                '-f'+(comics[i].panels[j].left.facing_out ? 'l' : 'r')+  // is the character facing inwards or outwards?
                '.png">';
@@ -146,7 +146,7 @@ function display_comics(comics, how_many, slide)  {
                (comics[i].panels[j].right.thought ? '-thought' : '')+'"></canvas>';
         }
         if (comics[i].panels[j].right.char)  {
-          c += '<br><img src="images/'+comics[i].panels[j].right.char+  // which character?
+          c += '<br><img src="characters/'+comics[i].panels[j].right.char+  // which character?
                (comics[i].panels[j].right.pose ? '-'+comics[i].panels[j].right.pose : '')+  // any special pose?
                '-f'+(comics[i].panels[j].right.facing_out ? 'r' : 'l')+  // is the character facing inwards or outwards?
                '.png">';
