@@ -173,7 +173,10 @@ DIV.padded_bubble {
 
 
 /* dialogue tags */
-.dtag-human, .dtag-robot, .dtag-human-thought, .dtag-robot-thought {
+.dtag-human,   .dtag-human-thought,
+.dtag-robot,   .dtag-robot-thought,
+.dtag-apple,   .dtag-apple-thought,
+.dtag-android, .dtag-android-thought {
   margin: 0 15px;
 }
 

@@ -185,7 +185,7 @@ function display_comics(comics, how_many, slide)  {
       dtag_thickness = 1;
 
   // Human, speech, on the left
-  $('.p-left .dtag-human').not('.has-dtag').drawQuadratic({
+  $('.p-left .dtag-human, .p-left .dtag-apple').not('.has-dtag').drawQuadratic({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 5, y1: 0, // Start point
@@ -194,7 +194,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');  // apply the 'has-dtag' class to avoid drawing dialogue tags on any canvas that already has one
 
   // Human, speech, on the right (or close-up)
-  $('.p-right .dtag-human, .p-closeup .dtag-human').not('.has-dtag').drawQuadratic({
+  $('.p-right .dtag-human, .p-closeup .dtag-human, .p-right .dtag-apple, .p-closeup .dtag-apple').not('.has-dtag').drawQuadratic({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
@@ -203,7 +203,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');
 
   // Human, thought, on the left
-  $('.p-left .dtag-human-thought').not('.has-dtag').drawArc({
+  $('.p-left .dtag-human-thought, .p-left .dtag-apple-thought').not('.has-dtag').drawArc({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x: 9, y: 3,
@@ -221,7 +221,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');
 
   // Human, thought, on the right (or close-up)
-  $('.p-right .dtag-human-thought, .p-closeup .dtag-human').not('.has-dtag').drawArc({
+  $('.p-right .dtag-human-thought, .p-closeup .dtag-human-thought, .p-right .dtag-apple-thought, .p-closeup .dtag-apple-thought').not('.has-dtag').drawArc({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x: 6, y: 3,
@@ -239,7 +239,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');
 
   // Robot, speech, on the left
-  $('.p-left .dtag-robot').not('.has-dtag').drawLine({
+  $('.p-left .dtag-robot, .p-left .dtag-android').not('.has-dtag').drawLine({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 10, y1: 0,
@@ -249,7 +249,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');
 
   // Robot, speech, on the right (or close-up)
-  $('.p-right .dtag-robot, .p-closeup .dtag-robot').not('.has-dtag').drawLine({
+  $('.p-right .dtag-robot, .p-closeup .dtag-robot, .p-right .dtag-android, .p-closeup .dtag-android').not('.has-dtag').drawLine({
     strokeStyle: dtag_color,
     strokeWidth: dtag_thickness,
     x1: 5, y1: 0,
@@ -259,7 +259,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');
 
   // Robot, thought, on the left
-  $('.p-left .dtag-robot-thought').not('.has-dtag').drawRect({
+  $('.p-left .dtag-robot-thought, .p-left .dtag-android-thought').not('.has-dtag').drawRect({
     strokeStyle: dtag_color,
     x: 10, y: 2,
     width: 7, height: 5,
@@ -277,7 +277,7 @@ function display_comics(comics, how_many, slide)  {
   }).addClass('has-dtag');
 
   // Robot, thought, on the right (or close-up)
-  $('.p-right .dtag-robot-thought, .p-closeup .dtag-robot').not('.has-dtag').drawRect({
+  $('.p-right .dtag-robot-thought, .p-closeup .dtag-robot-thought, .p-right .dtag-android-thought, .p-closeup .dtag-android-thought').not('.has-dtag').drawRect({
     strokeStyle: dtag_color,
     x: 5, y: 2,
     width: 7, height: 5,
