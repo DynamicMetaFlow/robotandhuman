@@ -102,8 +102,12 @@ function display_comics(comics, how_many, slide)  {
            (comics[i].panels[j].closeup ? ' closeup' : '')+
            '">';
 
+      // if we're writing code for the panel in the JSON file
+      if (comics[i].panels[j].code)  {
+        c += '<div class="p-coded">' + comics[i].panels[j].code + '</div>';
+
       // if the panel is a special close-up shot
-      if (comics[i].panels[j].closeup)  {
+      }  else if (comics[i].panels[j].closeup)  {
         c += '<div class="p-closeup">';
         if (comics[i].panels[j].closeup.text)  {
           c += '<div class="dialogue">'+comics[i].panels[j].closeup.text+'</div>';

@@ -82,7 +82,7 @@ a:hover {
   position: relative;  /* so panels will be "positioned ancestors" of the images inside them */
 }
 
-.p-left, .p-right, .p-closeup {
+.p-left, .p-right, .p-closeup, .p-coded {
   margin: 0;
   border: 0;
   padding: 0;
@@ -104,11 +104,15 @@ a:hover {
   text-align: right;
 }
 
-.p-closeup {
+.p-closeup, .p-coded {
   text-align: center;
   line-height: 0;  /* The image floats a few pixels above the bottom of the panel unless the line-height is set
                       to something small.  I can't pretend to understand why.  This doesn't interfere with the dialogue
                       because .dialogue sets its own line-height, for unrelated reasons. */
+}
+
+.p-coded {
+  width: 100%;
 }
 
 
