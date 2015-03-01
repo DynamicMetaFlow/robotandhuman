@@ -1,5 +1,105 @@
 [
   {
+    "title": "Exercise",
+    "date": "01 March 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "I'm going for a run. Want to join me?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Where are you running to?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Well... back here, eventually. I'm just running for exercise."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh. Actually, robots don't benefit from exercise the way humans do."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "No? Why not?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, humans have to strike a balance between using their bodies enough to prevent atrophy, but not so much that they wear out."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "But for machines, atrophy isn't a concern, except over very long timeframes. Unnecessary activity mostly just wears us out."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "So, when we're not doing anything important, the best \"exercise\" is just to go into standby mode."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I guess that makes sense.  But, you know, exercise can have benefits beyond physical maintenance."
+        },
+        "right": {
+          "char": "robot",
+          "pose": "processing",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "It can give you experiences you'd never have otherwise. It lets you find out what you're capable of&mdash;and then push yourself to do even more!"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "standby",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Aren't those things worth the effort?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "standby",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "...R?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Huh? Oh, sorry, didn't hear you. I was... exercising."
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th, part 4",
     "date": "13 February 2015",
     "news": "",
