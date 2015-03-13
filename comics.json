@@ -1,5 +1,52 @@
 [
   {
+    "title": "Friday the 13th, part 5",
+    "date": "13 March 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "It's Friday the 13th once again, R! What's your programmers' practical joke this time&mdash;same as last month, perhaps?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Um, there wasn't a Friday the 13th last month."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "There... wasn't?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Of course not!  We skip over 13th when it would fall on a Friday in February.  That's why it's called \"leap year\"."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I see.  And this year is a leap year, is it?"
+        },
+       "right": {
+          "char": "robot",
+          "text": "Of course it is!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Mm-hmm... just out of curiosity, when was the last time you synchronized your internal clock?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "The server's been down all morning.  Why do you ask?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Exercise",
     "date": "01 March 2015",
     "news": "",
