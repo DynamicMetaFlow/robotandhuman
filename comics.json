@@ -1,5 +1,43 @@
 [
   {
+    "title": "Go play",
+    "date": "05 April 2015",
+    "news": "I chose to capitalize \"Go\" for clarity, even though there seems to be slightly more support for using lowercase. While researching this issue, I noticed that <a href=\"http://en.wiktionary.org/wiki/go#Etymology_2\">Wiktionary's definition for <i>go</i></a> lists one anagram for the word. See if you can guess what it is.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Hey R, want to play Go?  It's a simple, yet deeply strategic, perfect-information board game at which, unlike chess, computers have yet to surpass humans!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Sounds like fun."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "facing_out": true,
+          "text": "I'll get the board!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Checkmate in 47 moves."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Wha... but... it's not chess. There's no checkmate in Go."
+        },
+        "right": {
+          "char": "robot",
+          "text": "I'm including the number of moves it'll take for you to lose a game of Go and then suggest playing chess because you understand it better."
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th, part 5",
     "date": "13 March 2015",
     "news": "",
