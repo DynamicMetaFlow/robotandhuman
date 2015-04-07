@@ -16,14 +16,15 @@
 
 <body>
 <h1 id="ctitle">Robot &amp; Human</h1>
-<p id="top_controls"><a onClick="scroll_to_comic('#e1')" href="#e1">Start with the first comic</a> &darr;
+<p id="top_controls"><a data-scroll-id="e1" href="#e1">Start with the first comic</a> &darr;
 <a href="atom.txt">Subscribe (Atom)</a></p>
 
 <noscript>It looks like you have JavaScript turned off.  Sorry, but this whole page is an exercise in JS.  You won't
 see much here without it.</noscript>
 
 <p id="more">
-<a href="javascript:void(0)" onClick="display_comics(comic_list, at_a_time, true);">&darr; show more comics &darr;</a>
+<a href="javascript:void(0)">&darr; show more comics &darr;</a>
+<!-- the code that adds a click event to this link is at the bottom of comics.js -->
 </p>
 
 

@@ -76,14 +76,15 @@ function display_comics(comics, how_many, slide)  {
       .insertBefore('#more');
 
     // prev/next links
+    // on-click functionality is added after the comic loop, in the "Create click events" section
     c += '<div class="prevnext">';
     if (i > 0)  {
-      c += '<a onClick="scroll_to_comic(\'#'+next_id+'\')" href="#'+next_id+'" title="next comic up">&#x25b3;</a>';
+      c += '<a data-scroll-id="'+next_id+'" href="#'+next_id+'" title="next comic up">&#x25b3;</a>';
     }
     c += '<br>';
 
     if (i < comics.length - 1)  {
-      c += '<a onClick="scroll_to_comic(\'#'+prev_id+'\')" href="#'+prev_id+'" title="next comic down">&#x25bd;</a>';
+      c += '<a data-scroll-id="'+prev_id+'" href="#'+prev_id+'" title="next comic down">&#x25bd;</a>';
     }
     c += '</div>';
 
@@ -163,8 +164,8 @@ function display_comics(comics, how_many, slide)  {
     }
 
     // "show JSON" feature
-    c += '<div class="show_json"><a href="javascript:void(0)" '+
-         'onClick="$(this.parentNode).next().slideToggle()">&#x2b10; show/hide JSON</a></div><div class="json">'+
+    // on-click functionality is added after the comic loop, in the "Create click events" section
+    c += '<div class="show_json"><a href="javascript:void(0)">&#x2b10; show/hide JSON</a></div><div class="json">'+
          JSON.stringify(comics[i], null, "  ").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')+'</div>';
 
     // news
@@ -181,6 +182,12 @@ function display_comics(comics, how_many, slide)  {
     // if there aren't any more comics, hide the "show more comics" link
     if (num_comics_shown >= comics.length)  { $('#more').hide(); }
   }
+
+  // Create click events
+  // previous and next links, as well as the "Start with the first comic" link:
+  $('a[data-scroll-id]').click(function(){ scroll_to_comic( '#'+$(this).attr('data-scroll-id') ) });
+  // "show JSON" links:
+  $('.show_json a').click(function(){ $(this.parentNode).next().slideToggle() });
 
   // Hyphenate the dialogue
   Hyphenator.run();
@@ -302,4 +309,8 @@ function display_comics(comics, how_many, slide)  {
   // replace the loading image with the "show more" link
   $("#more").html( $("#more").data("oldhtml") );
 
+  // make the "show more" link work
+  $('#more a').click(function () {
+    display_comics(comic_list, at_a_time, true);
+  });
 }
