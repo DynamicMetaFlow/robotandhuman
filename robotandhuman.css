@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono|Noto+Sans:400,700,400italic,700italic);
 
 BODY {
-  font-family: Verdana, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   color: #000;
   background-color: #fff;
@@ -61,13 +61,15 @@ a:hover {
 
 /* The title and date field that precede the comic panels */
 .title {
-  font-weight: bold;
   float: left;
+  font-weight: bold;
+  font-size: 110%;
+  line-height: 110%;
 }
 
 .date {
   float: right;
-  margin-right: 14px;  /* so the right side of this div lines up with the right edge of the last panel */
+  /* date panels are also given a varying right margin in comics.js */
 }
 
 

@@ -3,6 +3,7 @@
     "title": "Go play",
     "date": "05 April 2015",
     "news": "I chose to capitalize \"Go\" for clarity, even though there seems to be slightly more support for using lowercase. While researching this issue, I noticed that <a href=\"http://en.wiktionary.org/wiki/go#Etymology_2\">Wiktionary's definition for <i>go</i></a> lists one anagram for the word. See if you can guess what it is.",
+    "extra_classes": "taller",
     "panels": [
       {
         "left": {

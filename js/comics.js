@@ -1,4 +1,4 @@
-// (c) 2013 Triskaideka.
+// (c) 2013-2015 Triskaideka.
 // May be re-used and re-distributed under the terms of the MIT License ( http://opensource.org/licenses/MIT ).
 
 // Variables that need to be global:
@@ -88,7 +88,8 @@ function display_comics(comics, how_many, slide)  {
     c += '</div>';
 
     // title & date
-    c += '<div class="title">'+comics[i].title+'</div><div class="date">'+comics[i].date+'</div><br>';
+    // the right margin on the date div seems to scale well enough, but it's pretty magical...
+    c += '<div class="title">'+comics[i].title+'</div><div class="date" style="margin-right:'+(11+2*comics[i].panels.length)+'px">'+comics[i].date+'</div><br>';
 
     // comic panels
     for (j = 0; j < comics[i].panels.length; j++)  {
