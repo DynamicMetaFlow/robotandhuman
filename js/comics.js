@@ -70,9 +70,10 @@ function display_comics(comics, how_many, slide)  {
         next_id = 'e' + (comics.length - i + 1),  // the ID of the next comic
         c = '';  // string containing all of the code for this comic
 
-    // We set the width of each episode div individually, according to how many panels it has.  If these numbers
-    // seem mysterious, see .panel in robotandhuman.css for (at least partial) enlightenment.
-    $('<div id="'+id+'" class="episode" style="display:none; width: '+(267*comics[i].panels.length)+'px"></div>\n')
+    // We set the width of each episode div individually, according to how many panels it has.
+    // 250 panel width + two 1px borders + 10px margin = 262, minus 10 because the margins are only between panels.
+    // See .panel in robotandhuman.css.
+    $('<div id="'+id+'" class="episode" style="display:none; width: '+(262*comics[i].panels.length-10)+'px"></div>')
       .insertBefore('#more');
 
     // prev/next links
@@ -90,7 +91,7 @@ function display_comics(comics, how_many, slide)  {
 
     // title & date
     // the right margin on the date div seems to scale well enough, but it's pretty magical...
-    c += '<div class="title">'+comics[i].title+'</div><div class="date" style="margin-right:'+(11+2*comics[i].panels.length)+'px">'+comics[i].date+'</div><br>';
+    c += '<div class="title">'+comics[i].title+'</div><div class="date">'+comics[i].date+'</div><br>';
 
     // comic panels
     for (j = 0; j < comics[i].panels.length; j++)  {
@@ -160,7 +161,7 @@ function display_comics(comics, how_many, slide)  {
         c += '</div>';  // class="p-right"
       }
 
-      c += '</div>\n';  // class="panel"
+      c += '</div>';  // class="panel"
     }
 
     // "show JSON" feature

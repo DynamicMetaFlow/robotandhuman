@@ -76,12 +76,17 @@ a:hover {
 /* individual panels */
 .panel {
   display: inline-block;
-  margin: 5px 10px 0 0;
+  margin: 5px 0 0 0;
   border: 1px solid #222;
   padding: 0;
   width: 250px;
   min-height: 300px;
   position: relative;  /* so panels will be "positioned ancestors" of the images inside them */
+}
+
+/* the space between panels */
+.panel + .panel {
+  margin-left: 10px;
 }
 
 .p-left, .p-right, .p-closeup, .p-coded {
