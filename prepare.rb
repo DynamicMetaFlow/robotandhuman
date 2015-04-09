@@ -1,5 +1,19 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
+### Minify the CSS file
+require 'cssminify'   # gem install cssminify
+
+minified_css_file = 'robotandhuman.min.css'
+
+File.new(minified_css_file, 'w').write(
+  CSSminify.compress(
+    File.open('robotandhuman.css')
+  )
+)
+puts "Finished writing #{minified_css_file}."
+
+
+### Create the Atom feed
 require 'tinyatom'    # gem install tinyatom
 require 'json/pure'   # gem install json_pure
 

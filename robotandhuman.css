@@ -8,13 +8,13 @@ BODY {
 }
 
 H1 {
-  font-size: 400%;
+  font-size: 450%;
   margin: 0 0 0 5%;
   display: inline-block;
 
   /* this part just makes the alignment look a little better */
   position: relative;
-  left: -4px;
+  left: -5px;
 }
 
 a:link {
@@ -41,6 +41,8 @@ a:hover {
   clear: both;
   margin-left: 5%;
   margin-top: 3.5em;
+  border-right: 2.5em solid rgba(0,0,0,0);  /* to keep the comics off the right edge of the viewport -- 
+                                               tried putting margins on .episode and the body but it didn't work */
   position: relative;
 }
 
