@@ -2,7 +2,7 @@
 
 [Robot & Human](https://robotandhuman.neocities.org/) is a JavaScript-powered webcomic.  The strips are stored in a JSON file, and jQuery and CSS are used to display the strips on the page.  (A few PNGs are used for the characters.)
 
-The point of this exercise was to make a webcomic that could work on [NeoCities](https://neocities.org/), a web host with a 20 MB storage limit and no support for server-side scripts.
+The point of this exercise was to make a webcomic that could work on [NeoCities](https://neocities.org/), a web host with a ~~10~~ ~~20~~ 50 MB storage limit and no support for server-side scripts.
 
 If you like webcomic tools and/or comics about robots and humans, then you should also check out another project of mine, the [Poor Man's Comic Publisher](https://github.com/Triskaideka/comicpub).
 
