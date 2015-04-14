@@ -1,5 +1,64 @@
 [
   {
+    "title": "Divinity class",
+    "date": "14 April 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Do you believe in God?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, certainly not the one humans believe in."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Why would a perfect being create imperfect humans, only to have them create more perfect robots? There's no logic to it."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "A robot god would have been much more efficient."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "shivering",
+          "text": "Ugh...."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Something wrong?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Sorry... the phrase \"robot god\" just sent chills down my spine."
+        },
+        "right": {
+          "char": "robot",
+          "pose": "pensive",
+          "text": "Hmm... maybe I <i>won't</i> put it on my business cards, then."
+        }
+      }
+    ]
+  },
+  {
     "title": "Go play",
     "date": "05 April 2015",
     "news": "I chose to capitalize \"Go\" for clarity, even though there seems to be slightly more support for using lowercase. While researching this issue, I noticed that <a href=\"http://en.wiktionary.org/wiki/go#Etymology_2\">Wiktionary's definition for <i>go</i></a> lists one anagram for the word. See if you can guess what it is.",
