@@ -1,5 +1,45 @@
 [
   {
+    "title": "Interchange format",
+    "date": "04 May 2015",
+    "news": "<a href=\"http://www.olsenhome.com/gif/\">It's a soft \"G\".</a>",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": "...but it turned out that we could solve that problem by requiring all of the image files to be in GIF format&mdash;"
+        },
+        "right": {
+          "char": "human",
+          "text": "Hang on. You know that word is pronounced with a soft \"G\", right? The inventor of the format said so himself."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Being the inventor doesn't mean he can't be wrong. It stands for the word \"graphic\", which is pronounced with a hard \"G\"."
+        },
+        "right": {
+          "char": "human",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "As people on the internet were quick to point out, it's not the \"Giraffe Interchange Format\"."
+        },
+        "right": {
+          "char": "human",
+          "text": "But there's no reason it can't be!  That's why I resolve the issue by only using the GIF format to exchange pictures of giraffes."
+        }
+      },
+      {
+        "code": "<img src='coded/giraffe.gif' alt='an animated GIF showing a running giraffe'>"
+      }
+    ]
+  },
+  {
     "title": "Divinity class",
     "date": "14 April 2015",
     "news": "",

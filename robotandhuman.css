@@ -198,7 +198,6 @@ DIV.padded_bubble {
 .show_json {
   text-align: right;
   font-size: smaller;
-  margin-right: 14px;  /* so the right side of this div lines up with the right edge of the last panel */
 }
 
 .show_json A {
