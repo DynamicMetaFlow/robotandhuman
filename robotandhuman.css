@@ -210,7 +210,6 @@ DIV.padded_bubble {
   border: 1px solid #999;
   padding: 0.5em;
   display: none;  /* hide it by default; the toggle link will show it */
-  margin-right: 14px;  /* so the right side of this div lines up with the right edge of the last panel */
 }
 
 
