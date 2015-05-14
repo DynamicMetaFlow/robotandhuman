@@ -1,5 +1,45 @@
 [
   {
+    "title": "Apple &amp; Android",
+    "date": "14 May 2015",
+    "news": "My wife says that \"Apple and Android\" sounds like it should be a children's show, so here you go.",
+    "panels": [
+      {
+        "left": {
+          "char": "apple",
+          "text": "I'm Apple! What's your name?"
+        },
+        "right": {
+          "char": "android",
+          "text": "I'm Android!  Want to be friends?"
+        }
+      },
+      {
+        "left": {
+          "char": "apple",
+          "text": "Yeah!"
+        },
+        "right": {
+          "char": "android",
+          "text": "Let's go to the park!"
+        }
+      },
+      {
+        "left": {
+          "char": "apple",
+          "text": "I can't go anywhere! I don't have legs!"
+        },
+        "right": {
+          "char": "android",
+          "text": "Don't worry&mdash;I have an idea!"
+        }
+      },
+      {
+        "code": "<img src='coded/rolling.gif' alt='an animated GIF showing Android running and rolling Apple along the ground'>"
+      }
+    ]
+  },
+  {
     "title": "Interchange format",
     "date": "04 May 2015",
     "news": "<a href=\"http://www.olsenhome.com/gif/\">It's a soft \"G\".</a>",
