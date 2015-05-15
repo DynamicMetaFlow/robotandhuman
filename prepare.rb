@@ -13,6 +13,19 @@ File.new(minified_css_file, 'w').write(
 puts "Finished writing #{minified_css_file}."
 
 
+### Minify the JSON file
+require 'json/minify'   # gem install json-minify
+
+minified_json_file = 'comics.min.json'
+
+File.new(minified_json_file, 'w').write(
+  JSON.minify(
+    File.open('comics.json').read
+  )
+)
+puts "Finished writing #{minified_json_file}."
+
+
 ### Create the Atom feed
 require 'tinyatom'    # gem install tinyatom
 require 'json/pure'   # gem install json_pure

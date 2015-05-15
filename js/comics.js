@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
   }
 
-  ajaxobj.open('GET', 'comics.json');
+  ajaxobj.open('GET', 'comics.min.json');
   ajaxobj.send(null);
 });
 

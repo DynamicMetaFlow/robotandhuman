@@ -13,4 +13,4 @@ The comics are displayed using [jQuery](http://jquery.com/) and two jQuery plugi
 
 [Hyphenator.js](https://code.google.com/p/hyphenator/) is optional; you could use a different build, or not use it at all.  But if the characters use long words, you'll probably at least want to hyphenate them manually.
 
-A [Ruby](http://www.ruby-lang.org/) script is run to generate the Atom feed and minify the CSS file.  It requires the [gems](http://rubygems.org/) [CSSminify](https://rubygems.org/gems/cssminify/), [tinyatom](https://rubygems.org/gems/tinyatom/), and [json_pure](https://rubygems.org/gems/json_pure/).  The gems are of course not included in this repository.
+A [Ruby](http://www.ruby-lang.org/) script is run to generate the Atom feed and minify the CSS file.  It requires the [gems](http://rubygems.org/) [CSSminify](https://rubygems.org/gems/cssminify/),  [json-minify](https://rubygems.org/gems/json-minify/), [json_pure](https://rubygems.org/gems/json_pure/), and [tinyatom](https://rubygems.org/gems/tinyatom/).  The gems are of course not included in this repository.
