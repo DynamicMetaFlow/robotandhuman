@@ -1,5 +1,43 @@
 [
   {
+    "title": "Responsive design",
+    "date": "29 June 2015",
+    "news": "In case it seems like I'm implying that I've made <i>this</i> site responsive, let me be quick to say that I have not.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "It took me four months, but I finally finished redesigning the lab's web site so it looks okay on that tiny phone screen you like so much."
+        },
+        "right": {
+          "char": "apple",
+          "text": "Actually, I have a watch now.  It's got a 1&frac13;-inch screen."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "apple",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "headinhands",
+          "text": "Hooray for progress...."
+        },
+        "right": {
+          "char": "apple",
+          "text": ""
+        }
+      }
+    ]
+  },
+  {
     "title": "Apple &amp; Android",
     "date": "14 May 2015",
     "news": "My wife says that \"Apple and Android\" sounds like it should be a children's show, so here you go.",
