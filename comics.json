@@ -1,5 +1,45 @@
 [
   {
+    "title": "That one thing",
+    "date": "11 July 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Hey H, remember that one time four years ago when you did that thing that was really embarrassing?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "headinhands",
+          "text": "Ugh... I do <i>now</i>; thanks!"
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "Wait... which thing are you talking about?"
+        },
+        "right": {
+          "char": "robot",
+          "facing_out": true,
+          "text": "Take your pick. I just knew there'd be <i>something</i> that fit that description."
+        }
+      }
+    ]
+  },
+  {
     "title": "Responsive design",
     "date": "29 June 2015",
     "news": "In case it seems like I'm implying that I've made <i>this</i> site responsive, let me be quick to say that I have not.",
