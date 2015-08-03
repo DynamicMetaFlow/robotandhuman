@@ -1,5 +1,57 @@
 [
   {
+    "title": "Cloud-based solution",
+    "date": "03 August 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Did you hear? The lab is moving to a cloud-based solution for record-keeping."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Sounds convenient, but isn't there a security risk?"
+        },
+        "right": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "I don't know! All I know is that cloud-based solutions make my life easier, so I use them for everything I can."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "A cloud-based solution for preventing skin cancer! A cloud-based solution for washing my car! A cloud-based solution for watering my garden!"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Those actually sound really complex."
+        },
+        "right": {
+          "char": "human",
+          "text": "<i>Au contraire!</i>"
+        }
+      },
+   {
+      "code": "<img src='coded/cloud.gif' alt='an animation showing a cloud raining on some sparse grass'>"
+    }
+    ]
+  },
+  {
     "title": "That one thing",
     "date": "11 July 2015",
     "news": "",
@@ -113,7 +165,7 @@
         }
       },
       {
-        "code": "<img src='coded/rolling.gif' alt='an animated GIF showing Android running and rolling Apple along the ground'>"
+        "code": "<img src='coded/rolling.gif' alt='an animation showing Android running and rolling Apple along the ground'>"
       }
     ]
   },
@@ -153,7 +205,7 @@
         }
       },
       {
-        "code": "<img src='coded/giraffe.gif' alt='an animated GIF showing a running giraffe'>"
+        "code": "<img src='coded/giraffe.gif' alt='an animation showing a running giraffe'>"
       }
     ]
   },
