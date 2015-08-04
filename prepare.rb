@@ -49,6 +49,16 @@ feed = TinyAtom::Feed.new(
 )
 
 
+# Check for duplicate titles
+(0...comics.length).each do |n|
+  (0...n).each do |m|
+    if comics[n]['title'].downcase == comics[m]['title'].downcase then
+      puts "  !! There appear to be two comics with the title \"#{comics[m]['title']}\"."
+    end
+  end
+end
+
+
 # Add each comic as a feed entry
 id = 1 + (comics.length - max_entries)  # offset the ID appropriately
 alltimes = Array.new
