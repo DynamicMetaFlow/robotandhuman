@@ -1,5 +1,62 @@
 [
   {
+    "title": "Efficiency",
+    "date": "09 August 2015",
+    "news": "",
+    "panels": [
+     {
+        "left": {
+          "char": "human",
+          "text": "What's the word for a robot who eats other robots?  Is it \"cannibot\"?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "The word for a robot that <i>eats</i> anything is \"malfunctioning\"."
+        }
+      },
+     {
+        "left": {
+          "char": "human",
+          "text": "But you <i>do</i> repair yourselves with parts from dead robots."
+        },
+        "right": {
+          "char": "robot",
+          "text": "That's called \"recycling\".  Something humans could learn from."
+        }
+      },
+     {
+        "left": {
+          "char": "human",
+          "text": "So you want <i>us</i> to be cannibals."
+        },
+        "right": {
+          "char": "robot",
+          "text": "No, that raises health issues, but... think about this.  Humans waste their dead by burying or even burning them... "
+        }
+      },
+     {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "...then consume petroleum to create plastic skeletons for Halloween decorations.  There's an opportunity for efficiency there that you're squandering."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Yeah, you would definitely get arrested for taking advantage of that \"opportunity for efficiency\"."
+        },
+        "right": {
+          "char": "robot",
+          "text": "And that's why humans are never going to fix the climate change problem."
+        }
+      }
+    ]
+  },
+  {
     "title": "Cloud-based solution",
     "date": "03 August 2015",
     "news": "",
@@ -46,9 +103,9 @@
           "text": "<i>Au contraire!</i>"
         }
       },
-    {
-      "code": "<img src='coded/cloud.gif' alt='an animation showing a cloud raining on some sparse grass'>"
-    }
+      {
+        "code": "<img src='coded/cloud.gif' alt='An animation showing a cloud raining on some sparse grass and a flower'>"
+      }
     ]
   },
   {
@@ -165,7 +222,7 @@
         }
       },
       {
-        "code": "<img src='coded/rolling.gif' alt='an animation showing Android running and rolling Apple along the ground'>"
+        "code": "<img src='coded/rolling.gif' alt='An animation showing Android running and rolling Apple along the ground'>"
       }
     ]
   },
@@ -205,7 +262,7 @@
         }
       },
       {
-        "code": "<img src='coded/giraffe.gif' alt='an animation showing a running giraffe'>"
+        "code": "<img src='coded/giraffe.gif' alt='An animation showing a running giraffe'>"
       }
     ]
   },

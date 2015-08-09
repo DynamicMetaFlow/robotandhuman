@@ -3,101 +3,115 @@
 ### Minify the CSS file
 require 'cssminify'   # gem install cssminify
 
-minified_css_file = 'robotandhuman.min.css'
+src_css_filename = 'robotandhuman.css'
+min_css_filename = 'robotandhuman.min.css'
 
-File.new(minified_css_file, 'w').write(
-  CSSminify.compress(
-    File.open('robotandhuman.css')
+if (File.open(src_css_filename).mtime <=> File.open(min_css_filename).mtime) == 1 then
+  File.open(min_css_filename, 'w').write(
+    CSSminify.compress(
+      File.open(src_css_filename)
+    )
   )
-)
-puts "Finished writing #{minified_css_file}."
+  action_taken = "Finished writing"
+else
+  action_taken = "No need to update"
+end
+
+puts "#{action_taken} #{min_css_filename}."
 
 
-### Minify the JSON file
-require 'json/minify'   # gem install json-minify
-
-minified_json_file = 'comics.min.json'
-
-File.new(minified_json_file, 'w').write(
-  JSON.minify(
-    File.open('comics.json').read
-  )
-)
-puts "Finished writing #{minified_json_file}."
-
-
-### Create the Atom feed
-require 'tinyatom'    # gem install tinyatom
-require 'json/pure'   # gem install json_pure
-
-base_url = 'http://robotandhuman.neocities.org/'
-max_entries = 20   # only include this many entries in the feed
+# The rest of what this script does depends on whether or not there are any new comics
+src_json_filename = 'comics.json'
+min_json_filename = 'comics.min.json'
 feed_filename = 'atom.txt'
 
-# Read in the JSON file
-cfile = File.open('comics.json', 'r')
-comics = JSON.parse( cfile.readlines.join() )
-cfile.close
+if (File.open(src_json_filename).mtime <=> File.open(min_json_filename).mtime) == 1 then
+
+  ### Minify the JSON file
+  require 'json/minify'   # gem install json-minify
+
+  File.open(min_json_filename, 'w').write(
+    JSON.minify(
+      File.open(src_json_filename).read
+    )
+  )
 
 
-# Create the feed object
-feed = TinyAtom::Feed.new(
-  base_url,
-  'Robot & Human',
-  "#{base_url}atom.txt",
-  :author_name => 'Triskaideka'
-)
+  ### Create the Atom feed
+  require 'tinyatom'    # gem install tinyatom
+  require 'json/pure'   # gem install json_pure
+
+  base_url = 'https://robotandhuman.neocities.org/'
+  max_entries = 20   # only include this many entries in the feed
+
+  # Read in the JSON file
+  cfile = File.open('comics.json', 'r')
+  comics = JSON.parse( cfile.readlines.join() )
+  cfile.close
 
 
-# Check for duplicate titles
-(0...comics.length).each do |n|
-  (0...n).each do |m|
-    if comics[n]['title'].downcase == comics[m]['title'].downcase then
-      puts "  !! There appear to be two comics with the title \"#{comics[m]['title']}\"."
+  # Create the feed object
+  feed = TinyAtom::Feed.new(
+    base_url,
+    'Robot & Human',
+    base_url + feed_filename,
+    :author_name => 'Triskaideka'
+  )
+
+
+  # Check for duplicate titles
+  (0...comics.length).each do |n|
+    (0...n).each do |m|
+      if comics[n]['title'].downcase == comics[m]['title'].downcase then
+        puts "  !! There appear to be two comics with the title \"#{comics[m]['title']}\"."
+      end
     end
   end
-end
 
 
-# Add each comic as a feed entry
-id = 1 + (comics.length - max_entries)  # offset the ID appropriately
-alltimes = Array.new
+  # Add each comic as a feed entry
+  id = 1 + (comics.length - max_entries)  # offset the ID appropriately
+  alltimes = Array.new
 
-comics[0...max_entries].reverse.each do |c|
+  comics[0...max_entries].reverse.each do |c|
 
-  # This relies on some assumptions about the way I usually write times in the JSON file -- maybe
-  # I should be adhering to a strict, reliably parsable format, but I wanted more freedom than that.
-  begin
-    # dd Month yyyy
-    t = Time.parse( c['date'].split(' ').reverse.join(' ') )
-  rescue ArgumentError
-    # or, just yyyy
-    t = Time.parse( c['date'] + '-07-01' )  # roughly the middle of the year
+    # This relies on some assumptions about the way I usually write times in the JSON file -- maybe
+    # I should be adhering to a strict, reliably parsable format, but I wanted more freedom than that.
+    begin
+      # dd Month yyyy
+      t = Time.parse( c['date'].split(' ').reverse.join(' ') )
+    rescue ArgumentError
+      # or, just yyyy
+      t = Time.parse( c['date'] + '-07-01' )  # roughly the middle of the year
+    end
+
+    # Make sure this time is unique within the feed.  This is why we loop over the comics in the reverse of their order in
+    # the JSON file (which we assume is reverse-chronological): so that if two (or more) comics have the same date and one
+    # needs to have its time incremented, we do it to the one(s) that come later in chronological order.
+    while alltimes.include?(t) do
+      t = t + 1
+    end
+    alltimes.push(t)
+
+    #    add_entry(id, title,      updated, link,                 options = {})
+    feed.add_entry(id, c['title'], t,       "#{base_url}#e#{id}")
+
+    # Increment ID
+    id = id + 1
+
   end
 
-  # Make sure this time is unique within the feed.  This is why we loop over the comics in the reverse of their order in
-  # the JSON file (which we assume is reverse-chronological): so that if two (or more) comics have the same date and one
-  # needs to have its time incremented, we do it to the one(s) that come later in chronological order.
-  while alltimes.include?(t) do
-    t = t + 1
-  end
-  alltimes.push(t)
 
-  #    add_entry(id, title,      updated, link,                 options = {})
-  feed.add_entry(id, c['title'], t,       "#{base_url}#e#{id}")
+  # Output the feed
+  #puts feed.make(:indent => 2)  # for debugging
+  File.new(feed_filename, 'w').write(
+    feed.make(:indent => 2)
+  )
 
-  # Increment ID
-  id = id + 1
-
+  action_taken = "Finished writing"
+else
+  action_taken = "No need to update"
 end
 
-
-# Output the feed
-#puts feed.make(:indent => 2)  # for debugging
-ffile = File.new(feed_filename, 'w')
-
-ffile.write( feed.make(:indent => 2) )
-
-ffile.close
-
-puts "Finished writing #{feed_filename}."
+puts "#{action_taken} #{min_json_filename}."
+puts "#{action_taken} #{feed_filename}."
