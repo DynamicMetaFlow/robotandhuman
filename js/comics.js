@@ -33,7 +33,9 @@ $(document).ready(function () {
 });
 
 
-function scroll_to_comic(selector)  {
+function scroll_to_comic(to, from)  {
+  var selector = '#' + to;
+
   // If the item we're trying to scroll to doesn't exist on the page, that's probably because it belongs to an earlier
   // comic that hasn't been displayed yet, so start by loading all comics up to that one.
   if ( ! $(selector).length ) {
@@ -41,6 +43,15 @@ function scroll_to_comic(selector)  {
     display_comics(comic_list, 0);
   }
   $.scrollTo(selector, 'fast', scrollto_settings);
+
+  // Move focus to the corresponding link for the comic that we've moved to.
+  // This is important so that the keyboard can be used to navigate between comics.
+  if ( from < to )  {
+    // I don't understand why I need to setTimeout() for this, but I do.
+    setTimeout(function(){ $(selector).find('.prevnext a:first').focus(); }, 0);
+  }  else  {
+    setTimeout(function(){ $(selector).find('.prevnext a:last').focus(); }, 0);
+  }
 }
 
 
@@ -184,14 +195,23 @@ function display_comics(comics, how_many, slide)  {
     if (num_comics_shown >= comics.length)  { $('#more').hide(); }
   }
 
+
   // Create click events
   // previous and next links, as well as the "Start with the first comic" link:
-  $('a[data-scroll-id]').click(function(){ scroll_to_comic( '#'+$(this).attr('data-scroll-id') ) });
+  $('a[data-scroll-id]').click(function(){
+    scroll_to_comic(
+      $(this).attr('data-scroll-id'),
+      $(this).parents('.episode').attr('id')
+    );
+  });
+
   // "show JSON" links:
   $('.show_json a').click(function(){ $(this.parentNode).next().slideToggle() });
 
+
   // Hyphenate the dialogue
   Hyphenator.run();
+
 
   // Add the dialogue tags
   var dtag_color = "#999",
@@ -307,11 +327,14 @@ function display_comics(comics, how_many, slide)  {
     fromCenter: true
   }).addClass('has-dtag');
 
+
   // replace the loading image with the "show more" link
   $("#more").html( $("#more").data("oldhtml") );
+
 
   // make the "show more" link work
   $('#more a').click(function () {
     display_comics(comic_list, at_a_time, true);
   });
-}
+
+}  // end function display_comics()
