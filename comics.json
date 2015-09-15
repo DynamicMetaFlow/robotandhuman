@@ -1,4 +1,82 @@
 [
+ {
+    "title": "Creative output",
+    "date": "14 September 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "You know, when I was young I dreamed of being a famous artist."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "But as I grew older, I realized that nobody except the absolute best can make a living in any artistic field."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "It's pretty messed up, isn't it?  Our society claims to value art, but we're not willing to pay people to produce it."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Yet we pay people plenty to produce things we don't really care about."
+        },
+        "right": {
+          "char": "robot",
+          "text": "There's nothing strange about it.  We have to pay people to produce things that are valued lightly because nobody wants to do it for free."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Not so with art. Most people would be happy to produce it for money, some people will do it for free, and a few people would do it even if were outlawed."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "It's no surprise that nobody wants to pay for something you couldn't suppress if you wanted to.  It would be like... like paying somebody to produce tornadoes."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "pensive",
+          "text": "Hmm... by that analogy, I should be able to find people who'll pay me to <i>stop</i> producing art."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Yes, I think there might be a market for that."
+        }
+      }
+    ]
+  },
   {
     "title": "Efficiency",
     "date": "09 August 2015",
