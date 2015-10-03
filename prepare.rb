@@ -59,8 +59,16 @@ if (File.open(src_json_filename).mtime <=> File.open(min_json_filename).mtime) =
   )
 
 
-  # Check for duplicate titles
+  # Check for duplicate titles and other errors
   (0...comics.length).each do |n|
+    if comics[n]['title'].empty? || comics[n]['title'].match(/\S/).nil? then
+      puts "  !! There's a comic dated #{ comics[n]['date'] } that's missing a title."
+    end
+  
+    if comics[n]['date'].empty? || comics[n]['date'].match(/\S/).nil? then
+      puts "  !! There's a comic titled \"#{ comics[n]['title'] }\" that's not dated."
+    end
+
     (0...n).each do |m|
       if comics[n]['title'].downcase == comics[m]['title'].downcase then
         puts "  !! There appear to be two comics with the title \"#{comics[m]['title']}\"."
