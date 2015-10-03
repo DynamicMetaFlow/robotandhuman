@@ -1,5 +1,73 @@
 [
- {
+  {
+    "title": "Peeple",
+    "date": "03 October 2015",
+    "news": "This is <a href=\"https://www.washingtonpost.com/news/the-intersect/wp/2015/09/30/everyone-you-know-will-be-able-to-rate-you-on-the-terrifying-yelp-for-people-whether-you-want-them-to-or-not/\">a real thing</a> and I can't think about it for more than 30 seconds without coming up with a new reason why it's a terrible idea.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "I read about this new phone app called \"Peeple\" that lets you post reviews of other people, unsolicited, for the whole internet to see."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Say no more. I'm already composing a script to give every human being in the world a negative review."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Won't work. You can post positive reviews for everybody, but negative reviews are opt-in."
+        },
+        "right": {
+          "char": "robot",
+          "text": "\"Five stars: Best coprophage in Schenectady.\""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "...and users can contest any review they consider inaccurate."
+        },
+        "right": {
+          "char": "robot",
+          "text": "What customer service team has the manpower to handle seven billion complaints?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "You can't review every person on earth. Reviewees have to have a phone number."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Easily created for free, with no need to prove your identity."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "...and if you're overly negative, that will be reflected in your \"positivity rating\"."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Surely we misanthropes have as much right to our opinions as anyone else."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "pensive",
+          "text": "Wow, you've really thought of everything."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Somebody has to, and it clearly wasn't going to be the people who developed this service."
+        }
+      }
+    ]
+  },
+  {
     "title": "Creative output",
     "date": "14 September 2015",
     "news": "",
