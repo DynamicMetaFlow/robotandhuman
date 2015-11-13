@@ -1,5 +1,74 @@
 [
   {
+    "title": "Friday the 13th, part 6",
+    "date": "13 November 2015",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Good morning, R! What practical joke are your programmers playing on you for this Friday the 13th?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "handsup",
+          "text": "They've blocked my ability to detect infinite loops!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I thought computers could never detect infinite loops."
+        },
+        "right": {
+          "char": "robot",
+          "text": "For regular computers, that's true. But an artificial intelligence can recognize them fairly easily."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "You just have to teach it to remember things it's done recently, and give it a predisposition not to do them again."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "You're saying the virtue that prevents humans from wasting time on repetitive tasks is... impatience?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Just so."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Wow, that's fascinating! But there's still one question it doesn't answer."
+        },
+        "right": {
+          "char": "robot",
+          "text": "What's that?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "What practical joke are your programmers playing on you for this Friday the 13th?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "handsup",
+          "text": "They've blocked my ability to detect infinite loops!"
+        }
+      }
+    ]
+  },
+  {
     "title": "Peeple",
     "date": "03 October 2015",
     "news": "This is <a href=\"https://www.washingtonpost.com/news/the-intersect/wp/2015/09/30/everyone-you-know-will-be-able-to-rate-you-on-the-terrifying-yelp-for-people-whether-you-want-them-to-or-not/\">a real thing</a> and I can't think about it for more than 30 seconds without coming up with a new reason why it's a terrible idea.",
