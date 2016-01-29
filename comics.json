@@ -1,5 +1,55 @@
 [
   {
+    "title": "Extra effort",
+    "date": "29 January 2016",
+    "news": "",
+    "extra_classes": "taller",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "pose": "fatigued",
+          "text": "I finally finished the Director's request to get all our population records into the new address format.  I had to work overtime for two weeks, but I made the deadline."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "You shouldn't have done that."
+        },
+        "right": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "Tell me about it! He obviously doesn't understand what a big job it was, or he wouldn't have asked. So I won't get any special thanks for it."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Plus, now that I've done it once, he'll think nothing of asking me to meet similar deadlines in the future."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "I meant that you should have asked me to do it. It's a find-and-replace with a little extra logic; I could have been done in about four seconds."
+        },
+        "right": {
+          "char": "human",
+          "text": "I'm trying to at least maintain the <i>illusion</i> that my wages are justified."
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th, part 6",
     "date": "13 November 2015",
     "news": "",
