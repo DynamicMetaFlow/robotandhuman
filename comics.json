@@ -1,5 +1,73 @@
 [
   {
+    "title": "Interrupting",
+    "date": "21 February 2016",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Knock, knock."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Who's there?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Interrupting robot."
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "Damn it!"
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      }
+    ]
+  },
+  {
     "title": "Extra effort",
     "date": "29 January 2016",
     "news": "",
