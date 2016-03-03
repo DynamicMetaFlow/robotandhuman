@@ -1,5 +1,54 @@
 [
   {
+    "title": "Web forms",
+    "date": "03 March 2016",
+    "news": "There is a perception among web developers that you are helping users if you tell them that a form is incomplete when they've barely started on it. I <i>know</i> it's incomplete, buddy. That's why I'm filling it out.",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Hey, can you help me check my e-mail?"
+        },
+        "right": {
+          "char": "android",
+          "text": "Sure. I'll just need your first and last name, your e-mail address, and your password."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Okay; my first name is H&mdash;"
+        },
+        "right": {
+          "char": "android",
+          "text": "OH MY GOD WHY HAVEN'T YOU GIVEN ME YOUR LAST NAME YET?? I CLEARLY STATED THAT I NEED YOUR LAST NAME!!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "Calm down! I'm getting to it!"
+        },
+        "right": {
+          "char": "android",
+          "text": "WHY ARE YOU SUCH A FAILURE AT LIFE?? DOES YOUR MOTHER KNOW SHE RAISED AN IDIOT"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "angry",
+          "text": "Okay, okay! My last name is&mdash;"
+        },
+        "right": {
+          "char": "android",
+          "text": "OH MY GOD WHY HAVEN'T YOU GIVEN ME YOUR E-MAIL ADDRESS YET??? I'VE NEVER SEEN SUCH STAGGERING INCOMPETENCE"
+        }
+      }
+    ]
+  },
+  {
     "title": "Interrupting",
     "date": "21 February 2016",
     "news": "",
