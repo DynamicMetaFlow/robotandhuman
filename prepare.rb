@@ -6,7 +6,8 @@ require 'cssminify'   # gem install cssminify
 src_css_filename = 'robotandhuman.css'
 min_css_filename = 'robotandhuman.min.css'
 
-if (File.open(src_css_filename).mtime <=> File.open(min_css_filename).mtime) == 1 then
+if ! File.file?(min_css_filename) ||
+   ( File.open(src_css_filename).mtime <=> File.open(min_css_filename).mtime ) == 1 then
   File.open(min_css_filename, 'w').write(
     CSSminify.compress(
       File.open(src_css_filename)
@@ -25,7 +26,8 @@ src_json_filename = 'comics.json'
 min_json_filename = 'comics.min.json'
 feed_filename = 'atom.txt'
 
-if (File.open(src_json_filename).mtime <=> File.open(min_json_filename).mtime) == 1 then
+if ! File.file?(min_json_filename) ||
+    ( File.open(src_json_filename).mtime <=> File.open(min_json_filename).mtime ) == 1 then
 
   ### Minify the JSON file
   require 'json/minify'   # gem install json-minify
