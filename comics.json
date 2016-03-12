@@ -1,5 +1,67 @@
 [
   {
+    "title": "AlphaGo",
+    "date": "12 March 2016",
+    "news": "<a href=\"http://www.theverge.com/2016/3/12/11210650/alphago-deepmind-go-match-3-result\">http://www.theverge.com/2016/3/12/11210650/alphago-deepmind-go-match-3-result</a>",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "pose": "fatigued",
+          "text": "Well, it's happened. A computer has beaten the world champion at Go."
+        },
+        "right": {
+          "char": "robot",
+          "text": "I wasn't going to gloat."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "fatigued",
+          "text": "It's just depressing to know that there's one more way in which I'm inferior to an inanimate object."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Did you ever play much Go?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "Well, no, but..."
+        },
+        "right": {
+          "char": "robot",
+          "text": "So a computer is better than you at something you never cared about being good at anyway. What's the problem?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "I'm sure there are plenty of things you <i>are</i> good at that are still well out of reach for artificial intelligences."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "pensive",
+          "text": "You're right... arguing about the quality of various TV shows on the internet is probably safe for a few years, at least."
+        },
+        "right": {
+          "char": "robot",
+          "text": "You're a real modern-day John Henry, you know that?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Web forms",
     "date": "03 March 2016",
     "news": "There is a perception among web developers that you are helping users if you tell them that a form is incomplete when they've barely started on it. I <i>know</i> it's incomplete, buddy. That's why I'm filling it out.",
