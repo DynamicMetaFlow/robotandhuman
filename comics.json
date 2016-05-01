@@ -1,5 +1,42 @@
 [
   {
+    "title": "Eating healthy",
+    "date": "30 April 2016",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": "Your body fat percentage is higher than recommended.  You should lose some weight."
+        },
+        "right": {
+          "char": "human",
+          "text": "I'd like to, but I can never stick to a diet."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Eating healthy shouldn't be hard. The human body is designed to know what's good for it, so just listen to what it tells you."
+        },
+        "right": {
+          "char": "human",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "My body tells me to eat French fries one hundred percent of the time."
+        }
+      }
+    ]
+  },
+  {
     "title": "AlphaGo",
     "date": "12 March 2016",
     "news": "<a href=\"http://www.theverge.com/2016/3/12/11210650/alphago-deepmind-go-match-3-result\">http://www.theverge.com/2016/3/12/11210650/alphago-deepmind-go-match-3-result</a>",
