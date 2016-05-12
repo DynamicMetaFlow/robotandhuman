@@ -1,5 +1,56 @@
 [
   {
+    "title": "Friday the 13th, part 7",
+    "date": "13 May 2016",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "It's Friday the 13th, R! What practical joke have your programmers played on you this time?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "kickme",
+          "text": "They've activated a digital sign on my chest plate."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Does that say \"Kick Me\"?"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "kickme",
+          "text": "It does."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "pose": "kickme",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "So&mdash;"
+        },
+        "right": {
+          "char": "robot",
+          "pose": "kickme",
+          "text": "Don't even think about it."
+        }
+      }
+    ]
+  },
+  {
     "title": "Eating healthy",
     "date": "30 April 2016",
     "news": "",
