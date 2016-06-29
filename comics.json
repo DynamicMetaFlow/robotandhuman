@@ -1,4 +1,41 @@
 [
+ {
+    "title": "Zombie apocalypse",
+    "date": "29 June 2016",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "I like to think I could do pretty well for myself if there ever were a zombie apocalypse."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "I calculate that you'd get bitten within the first twelve minutes."
+        },
+        "right": {
+          "char": "human",
+          "text": "Damn.  Guess I owe Dr. A five dollars."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Were you betting on my estimate?"
+        },
+        "right": {
+          "char": "human",
+          "text": "The over/under was 45 seconds."
+        }
+      }
+    ]
+  },
   {
     "title": "Friday the 13th, part 7",
     "date": "13 May 2016",
