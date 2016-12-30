@@ -1,5 +1,103 @@
 [
  {
+    "title": "Workplace nemesis",
+    "date": "30 December 2017",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": "I ran into J in the corridor."
+        },
+        "right": {
+          "char": "human",
+          "text": "Argh, I hate that guy! He's my workplace nemesis."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "Why?  What did he say to you?"
+        },
+        "right": {
+          "char": "human",
+          "text": "Well... nothing, really. We've never spoken. But we keep having awkward encounters."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Reaching for the same drink in the cafeteria line... not holding doors... little annoyances just keep building up, and now I dread the sight of him."
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "If you put aside your groundless animosity and talked to him, you might find that he's actually a decent guy."
+        },
+        "right": {
+          "char": "human",
+          "pose": "handsup",
+          "text": "I watched the man finish a pot of coffee and not brew another! You don't just forgive that!"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Ideas",
+    "date": "31 July 2016",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "I told my boss that I felt like he didn't respect my ideas."
+        },
+        "right": {
+          "char": "robot",
+          "text": "What did he say?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "He told me I was wrong, and explained why."
+        },
+        "right": {
+          "char": "robot",
+          "text": "And he didn't see the irony in that?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "No. I think he might be a robot <i>programmed</i> to dismiss my ideas."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Hey now&mdash;we robots have had better self-awareness than that for years."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": ""
+        },
+        "right": {
+          "char": "robot",
+          "text": "Your boss' self-awareness level is closer to \"bird\"."
+        }
+      }
+    ]
+  },
+  {
     "title": "Zombie apocalypse",
     "date": "29 June 2016",
     "news": "",
