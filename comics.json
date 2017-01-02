@@ -1,5 +1,76 @@
 [
- {
+  {
+    "title": "Dating service",
+    "date": "02 January 2017",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "That new girl in the next lab is so cute!"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Her features <i>are</i> very symmetrical."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I'm going to ask her out. Will you help me practice what to say?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Sure, go ahead."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "coveringmouth",
+          "text": "<span style='white-space:nowrap'>- ahem -</span>"
+        },
+        "right": {
+          "char": "robot",
+          "text": ""
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Hey there, <span style='white-space:nowrap'>I&mdash;</span>"
+        },
+        "right": {
+          "char": "robot",
+          "text": "No."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "frowning",
+          "text": "Wait, at least let <span style='white-space:nowrap'>me&mdash;</span>"
+        },
+        "right": {
+          "char": "robot",
+          "text": "Take a hike, bozo."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "angry",
+          "text": "This isn't <span style='white-space:nowrap'>very&mdash;</span>"
+        },
+        "right": {
+          "char": "robot",
+          "extra_classes": "mechanical_voice",
+          "text": "*Ennnnnnnnt!*"
+        }
+      }
+    ]
+  },
+  {
     "title": "Workplace nemesis",
     "date": "30 December 2016",
     "news": "",
