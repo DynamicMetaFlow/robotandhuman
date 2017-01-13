@@ -1,5 +1,32 @@
 [
   {
+    "title": "Friday the 13th, part 8",
+    "date": "13 January 2017",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Friday the 13th is upon us once again, R!  What practical joke have your programmers played on you this time?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "They've messed up my mathematical functions.  They have me thinking that two plus two equals four!"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "But... two plus two <i>does</i> equal four."
+        },
+        "right": {
+          "char": "robot",
+          "text": "So they've gotten to you too!"
+        }
+      }
+    ]
+  },
+  {
     "title": "Dating service",
     "date": "02 January 2017",
     "news": "",
