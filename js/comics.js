@@ -1,4 +1,4 @@
-// (c) 2013-2015 Triskaideka.
+// (c) 2013-2017 Triskaideka.
 // May be re-used and re-distributed under the terms of the MIT License ( http://opensource.org/licenses/MIT ).
 
 // Variables that need to be global:
@@ -124,7 +124,7 @@ function display_comics(comics, how_many, slide)  {
       }  else if (comics[i].panels[j].closeup)  {
         c += '<div class="p-closeup">';
         if (comics[i].panels[j].closeup.text)  {
-          c += '<div class="dialogue">'+comics[i].panels[j].closeup.text+'</div>';
+          c += '<div class="dialogue hyphenate">'+comics[i].panels[j].closeup.text+'</div>';
           c += '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].closeup.char+
                (comics[i].panels[j].closeup.thought ? '-thought' : '')+'"></canvas>';
         }
@@ -140,7 +140,7 @@ function display_comics(comics, how_many, slide)  {
         // left character & dialogue
         c += '<div class="p-left">';
         if (comics[i].panels[j].left.text)  {
-          c += '<div class="dialogue'+
+          c += '<div class="dialogue hyphenate'+
                (comics[i].panels[j].left.extra_classes ? ' '+comics[i].panels[j].left.extra_classes : '')+
                '">'+comics[i].panels[j].left.text+'</div>'+
                '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].left.char+
@@ -157,7 +157,7 @@ function display_comics(comics, how_many, slide)  {
         // right character & dialogue
         c += '<div class="p-right">';
         if (comics[i].panels[j].right.text)  {
-          c += '<div class="dialogue'+
+          c += '<div class="dialogue hyphenate'+
                (comics[i].panels[j].right.extra_classes ? ' '+comics[i].panels[j].right.extra_classes : '')+
                '">'+comics[i].panels[j].right.text+'</div>'+
                '<br><canvas width="15" height="15" class="dtag-'+comics[i].panels[j].right.char+

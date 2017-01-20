@@ -2,7 +2,7 @@ The original code in this project may be copied and re-used under the terms of t
 
   http://opensource.org/licenses/MIT
 
-Note that jQuery, jQuery.ScrollTo, jCanvas, and Hyphenator are separate projects with separate owners.  jQuery and jCanvas also use the MIT License, and are re-distributed here under those terms.  I don't see a specific license mentioned for jQuery.ScrollTo.  Hyphenator uses the GNU LGPL version 3; see the hyphenator.js file for details.
+Note that jQuery, jQuery.ScrollTo, jCanvas, and Hyphenator are separate projects with separate owners.  jQuery, jCanvas, and Hyphenator also use the MIT License, and are re-distributed here under those terms.  I don't see a specific license mentioned for jQuery.ScrollTo.
 
 The original writing and graphics in this project may be copied and re-used under the terms of the Creative Commons Attribution-ShareAlike 3.0 Unported License:
 
