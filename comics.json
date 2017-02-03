@@ -1,5 +1,54 @@
 [
   {
+    "title": "Robot babies",
+    "date": "2 February 2017",
+    "news": "",
+    "panels": [
+      {
+        "left": {
+          "char": "human",
+          "text": "Do robots have children?"
+        },
+        "right": {
+          "char": "robot",
+          "text": "I spawned 300 child processes while you were asking that question."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "Ew.  But I meant... you know... the kind of children that take up space."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Oh, so you're prejudiced in favor of consciousnesses that have bodies?"
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "text": "I guess I am."
+        },
+        "right": {
+          "char": "robot",
+          "text": "Well, I haven't coded any other robots myself, but if you must know, my programmers <em>have</em> produced a robot that uses a later version of my own AI software."
+        }
+      },
+      {
+        "left": {
+          "char": "human",
+          "pose": "pensive",
+          "thought": true,
+          "text": "<img src='characters/babyrobot-fl.png'>"
+        },
+        "right": {
+          "char": "robot",
+          "text": "...what are you thinking about?"
+        }
+      }
+    ]
+  },
+  {
     "title": "Friday the 13th, part 8",
     "date": "13 January 2017",
     "news": "",
