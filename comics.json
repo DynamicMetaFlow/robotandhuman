@@ -1,5 +1,42 @@
 [
   {
+    "title": "Early and often",
+    "date": "18 May 2017",
+    "news": "Dear visitors from the future: \"voting machines\" were devices we used to help us run actual government elections during a dark time when we inexplicably forgot how easily computers could be used to fake data.",
+    "panels": [
+      {
+        "left": {
+          "char": "robot",
+          "text": ""
+        },
+        "right": {
+          "char": "human",
+          "text": "Are you allowed to vote?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "I am and I do! In fact, you could say I'm a <i>voting machine</i>, heh heh."
+        },
+        "right": {
+          "char": "human",
+          "text": "Oh, cool! Did you have to get certified for that, or what?"
+        }
+      },
+      {
+        "left": {
+          "char": "robot",
+          "text": "&hellip;that was supposed to be a pun.  Robots don't actually work as voting machines."
+        },
+        "right": {
+          "char": "human",
+          "text": "Oh.  Wait, are you just saying that because you didn't get certified?  I'd help you study for the test&hellip;"
+        }
+      }
+    ]
+  },
+  {
     "title": "Robot babies",
     "date": "2 February 2017",
     "news": "",
